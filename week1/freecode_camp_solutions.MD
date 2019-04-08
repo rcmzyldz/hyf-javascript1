@@ -288,91 +288,308 @@ function myOutfit() {
 myOutfit();
 ```
 ## 51. Return a Value from a Function with Return
+Use a ```return``` statement to send a value back out of a function.
 ```
-
+function timesFive (num) {
+  return num * 5;
+}
+timesFive(5);
+timesFive(2);
+timesFive(0);
 ```
 ## 52. Understanding Undefined Value returned from a Function
 ```
-
+function addFive() {
+  sum = sum + 5;
+}
 ```
 ## 53. Assignment with a Returned Value
 ```
-
+var processed = 0;
+function processArg(num) {
+  return (num + 3) / 5;
+}
+processed = processArg(7);
 ```
 ## 54. Stand in Line
-```
+ A **queue** is an abstract Data Structure where items are kept in order.
+ New items can be added (```push```) at the back of the queue and old items are taken off (```shift```) from the front of the queue.
 
+Add the number to the end of the array = ```push```
+Remove the first element of the array = ```shift```
+Then return the element that was removed = using ```return```.
+```
+function nextInLine(arr, item) {
+  arr.push(item);
+  return  arr.shift();
+}
 ```
 ## 55. Understanding Boolean Values
 ```
-
+function welcomeToBooleans() {
+return true;
+}
 ```
 ## 56. Use Conditional Logic with If Statements
 ```
-
+function trueOrFalse(wasThatTrue) {
+    if (wasThatTrue) {
+    return "Yes, that was true";
+  }
+  return "No, that was false";
+}
+trueOrFalse(true);
 ```
 ## 57. Comparison with the Equality Operator
 ```
-
+function testEqual(val) {
+  if (val == 12) {
+    return "Equal";
+  }
+  return "Not Equal";
+}
+testEqual(12);
 ```
 ## 58. Comparison with the Strict Equality Operator
-```
+However, unlike the equality operator, which attempts to convert both values being compared to a common type, the strict equality operator does not perform a type conversion.
 
+If the values being compared have different types, they are considered unequal, and the strict equality operator will return false.
+```
+function testStrict(val) {
+  if (val === 7) {
+    return "Equal";
+  }
+  return "Not Equal";
+}
+testStrict(10);
 ```
 ## 59. Practice comparing different values
 ```
-
+function compareEquality(a, b) {
+  if (a === b) {
+    return "Equal";
+  }
+  return "Not Equal";
+}
+compareEquality(10, "10");
 ```
 ## 60. Comparison with the Inequality Operator
 ```
-
+function testNotEqual(val) {
+  if (val != 99) {
+    return "Not Equal";
+  }
+  return "Equal";
+}
+testNotEqual(10);
 ```
 ## 61. Comparison with the Strict Inequality Operator
 ```
+function testStrictNotEqual(val) {
+  if (val !== 17) {
+    return "Not Equal";
+  }
+  return "Equal";
+}
 
+testStrictNotEqual(10);
 ```
 ## 62. Comparison with the Greater Than Operator
 ```
+function testGreaterThan(val) {
+  if (val > 100) {
+    return "Over 100";
+  }
 
+  if (val > 10) {
+    return "Over 10";
+  }
+
+  return "10 or Under";
+}
+
+testGreaterThan(10);
 ```
 ## 63. Comparison with the Greater Than Or Equal To Operator
 ```
+function testGreaterOrEqual(val) {
+  if (val >= 20) {
+    return "20 or Over";
+  }
 
+  if (val >= 10) {
+    return "10 or Over";
+  }
+
+  return "Less than 10";
+}
+
+
+testGreaterOrEqual(10);
 ```
 ## 64. Comparison with the Less Than Operator
 ```
+function testLessThan(val) {
+  if (val < 25) {
+    return "Under 25";
+  }
 
+  if (val < 55) {
+    return "Under 55";
+  }
+
+  return "55 or Over";
+}
+
+testLessThan(10);
 ```
 ## 65. Comparison with the Less Than Or Equal To Operator
 ```
+function testLessOrEqual(val) {
+  if (val <= 12) {
+    return "Smaller Than or Equal to 12";
+  }
+
+  if (val <=24) {
+    return "Smaller Than or Equal to 24";
+  }
+
+  return "More Than 24";
+}
+
+testLessOrEqual(10);
 
 ```
 ## 66. Comparison with the Logical And Operator
 ```
+function testLogicalAnd(val) {
 
+  if (val >= 25 && val <= 50) {
+      return "Yes";
+  }
+
+  return "No";
+}
+
+
+testLogicalAnd(10);
 ```
 ## 67. Comparison with the Logical Or Operator
 ```
+function testLogicalOr(val) {
 
+
+  if (val < 10 || val > 20 ) {
+
+    return "Outside";
+  }
+
+  return "Inside";
+}
+
+
+testLogicalOr(15);
 ```
 ## 68. Introducing Else Statements
 
 ```
+function testElse(val) {
+  var result = "";
+
+  if (val > 5) {
+    result = "Bigger than 5";
+  }
+
+  else {
+    result = "5 or Smaller";
+  }
+
+
+  return result;
+}
+
+
+testElse(4);
 
 ```
 ## 69. Introducing Else If Statements
 ```
+function testElseIf(val) {
+  if (val > 10) {
+    return "Greater than 10";
+  }
+
+  else if (val < 5) {
+    return "Smaller than 5";
+  }
+  else {
+      return "Between 5 and 10";
+  }
+
+}
+
+testElseIf(7);
 
 ```
 ## 70. Logical Order in If Else Statements
 ```
+function orderMyLogic(val) {
+  if (val < 5) {
+    return "Less than 5";
+  } else if (val < 10) {
+    return "Less than 10";
+  } else {
+    return "Greater than or equal to 10";
+  }
+}
 
+orderMyLogic(7);
 ```
 ## 71. Chaining If Else Statements
 ```
+function testSize(num) {
+  if(num < 5) {
+    return "Tiny";
+  } else if (num < 10) {
+ return "Small";
+  } else if (num < 15) {
+return "Medium";
+  } else if (num < 20) {
+return "Large";
+  } else if ( num >= 20 ) {
+    return "Huge";
+    } else {
+    return "Change Me"; }
 
+}
+
+testSize(7);
 ```
 ## 72. Golf Code
 ```
+var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+function golfScore(par, strokes) {
+  // Only change code below this line
+  if (strokes == 1) {
+return "Hole-in-one!";
+  } else if (strokes <= par - 2) {
+     return "Eagle" ;
+  } else if (strokes == par - 1) {
+     return "Birdie" ;
+  } else if (strokes == par) {
+     return "Par" ;
+  } else if (strokes == par + 1) {
+     return "Bogey" ;
+  } else if (strokes == par + 2) {
+     return "Double Bogey" ;
+  } else if (strokes >= par + 3) {
+     return "Go Home!" ;
+  } else {
+     return "Change Me";
+  }
 
+
+}
+
+golfScore(5, 4);
 ```
