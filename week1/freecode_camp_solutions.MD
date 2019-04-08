@@ -136,107 +136,243 @@ var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
 ```
 
 ## 24. Escape Sequences in Strings
-```
+Reasons to use escaping characters:
+- is to allow you to use characters you might not otherwise be able to type out, such as a backspace.
+- is to allow you to represent multiple quotes in a string without JS misinterpreting what you mean.
 
+```
+var myStr = 'FirstLine\n\t\\SecondLine\nThirdLine';
 ```
 
 ## 25. Concatenating Strings with Plus Operator
 ```
-
+var myStr = "This is the start. " +  "This is the end.";
 ```
 ## 26. Concatenating Strings with the Plus Equals Operator
 ```
-
+var myStr = "This is the first sentence. ";
+myStr += "This is the second sentence.";
 ```
 ## 27. Constructing Strings with Variables
 ```
+var myStr = "My name is " + myName + " and I am well!";
+```
+## 28. Appending Variables to Strings
+```
+var someAdjective = "boring";
+var myStr = "Learning to code is ";
+myStr += someAdjective;
+```
+## 29. Find the Length of a String
+```
+lastNameLength = lastName.length;
+```
+## 30. Use Bracket Notation to Find the First Character in a String
+```
+firstLetterOfLastName = lastName[0];
+```
+## 31. Understand String Immutability
+String values are *immutable*, means that they cannot be altered once created.
+```
+myStr = "Hello World";
+```
+## 32. Use Bracket Notation to Find the Nth Character in a String
+```
+var thirdLetterOfLastName = lastName[2];
+```
+## 33. Use Bracket Notation to Find the Last Character in a String
+Use  ```.length-1```
+```
+var lastLetterOfLastName = lastName[lastName.length-1];
+```
+## 34. Use Bracket Notation to Find the Nth-to-Last Character in a String
+```
+var secondToLastLetterOfLastName = lastName[lastName.length - 2];
+```
+## 35. Word Blanks
+```
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+  var result = "The " + myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb + ".";
+  return result;
+}
+wordBlanks("cat", "little", "hit", "slowly");
+```
+## 36. Store Multiple Values in one Variable using JavaScript Arrays
+Array variables for storing several pieces of data in one place.
+```
+var myArray = ["Alfi", 28];
+```
+## 37. Nest one Array within Another Array
+```
+var myArray = [["Bulls", 23], ["White Sox", 45]];
+```
+## 38. Access Array Data with Indexes
+```
+var myData = myArray[0];
+```
+## 39. Modify Array Data With Indexes
+```
+myArray[0] = 45;
+```
+## 40. Access Multi-Dimensional Arrays With Indexes
+```
+var myData = myArray[2][1];
+```
+## 41. Manipulate Arrays With push()
+Adding an extra to the last array.
+```
+myArray.push(["dog", 3]);
+```
+## 42. Manipulate Arrays With pop()
+You can pop off the last array, and store it in a variable.
+```
+var removedFromMyArray = myArray.pop();
+```
+## 43. Manipulate Arrays With shift()
+removing the first in the array
+```
+var removedFromMyArray = myArray.shift();
+```
+## 44. Manipulate Arrays With unshift()
+Adding an extra to the first in the array.
+```
+var myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+
+myArray.unshift(["Paul",35]);
+```
+## 45. Shopping List
+```
+var myList = [["rice", 5] , ["bread", 6] , ["cake", 7], [ "quinoa", 9], ["potato", 20]];
+```
+## 46. Write Reusable JavaScript with Functions
+```
+function reusableFunction() {
+  console.log("Hi World");
+}
+
+reusableFunction();
+```
+## 47. Passing Values to Functions with Arguments
+```
+function functionWithArgs (a , b) {
+console.log(a + b);
+}
+functionWithArgs (1 , 2);
+functionWithArgs (7 , 9);
+```
+## 48. Global Scope and Functions
+Scope refers to the visibility of variables.
+Variables which are defined **outside of a function block** have **Global scope**.
+Variables which are used **without the ```var```** keyword are automatically created in the ```global``` scope. This can create unintended consequences elsewhere in your code or when running a function again. You should always declare your variables with ```var```.
+```
+var myGlobal = 10;
+function fun1() {
+  oopsGlobal = 5;
+}
+```
+## 49. Local Scope and Functions
+```
+function myLocalScope() {
+var myVar = 'use strict';
+}
+myLocalScope();
+```
+## 50. Global vs. Local Scope in Functions
+```
+var outerWear = "T-Shirt";
+function myOutfit() {
+  var outerWear = "sweater";
+  return outerWear;
+}
+myOutfit();
+```
+## 51. Return a Value from a Function with Return
+```
 
 ```
-## 28.
+## 52. Understanding Undefined Value returned from a Function
 ```
 
 ```
-## 29.
+## 53. Assignment with a Returned Value
 ```
 
 ```
-## 30.
+## 54. Stand in Line
 ```
 
 ```
-## 31.
+## 55. Understanding Boolean Values
 ```
 
 ```
-## 32.
+## 56. Use Conditional Logic with If Statements
 ```
 
 ```
-## 33.
+## 57. Comparison with the Equality Operator
 ```
 
 ```
-## 34.
+## 58. Comparison with the Strict Equality Operator
 ```
 
 ```
-## 35.
+## 59. Practice comparing different values
 ```
 
 ```
-## 36.
+## 60. Comparison with the Inequality Operator
 ```
 
 ```
-## 37.
+## 61. Comparison with the Strict Inequality Operator
 ```
 
 ```
-## 38.
+## 62. Comparison with the Greater Than Operator
 ```
 
 ```
-## 39.
+## 63. Comparison with the Greater Than Or Equal To Operator
 ```
 
 ```
-## 40.
+## 64. Comparison with the Less Than Operator
 ```
 
 ```
-## 41.
+## 65. Comparison with the Less Than Or Equal To Operator
 ```
 
 ```
-## 42.
+## 66. Comparison with the Logical And Operator
 ```
 
 ```
-## 43.
+## 67. Comparison with the Logical Or Operator
 ```
 
 ```
-## 44.
+## 68. Introducing Else Statements
+
 ```
 
 ```
-## 45.
+## 69. Introducing Else If Statements
 ```
 
 ```
-## 46.
+## 70. Logical Order in If Else Statements
 ```
 
 ```
-## 47.
+## 71. Chaining If Else Statements
 ```
 
 ```
-## 48.
-```
-
-```
-## 49.
+## 72. Golf Code
 ```
 
 ```
