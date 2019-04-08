@@ -1,4 +1,6 @@
-
+#First Part javascript1
+Resource: [freeCodeCamp](https://www.freecodecamp.org/)
+My FreeCodeCamp Portfolio (https://www.freecodecamp.org/alfiyusrina)
 ## 1. Comment Your Code
 
 ```
@@ -569,7 +571,6 @@ testSize(7);
 ```
 var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
 function golfScore(par, strokes) {
-  // Only change code below this line
   if (strokes == 1) {
 return "Hole-in-one!";
   } else if (strokes <= par - 2) {
@@ -587,8 +588,6 @@ return "Hole-in-one!";
   } else {
      return "Change Me";
   }
-
-
 }
 
 golfScore(5, 4);
