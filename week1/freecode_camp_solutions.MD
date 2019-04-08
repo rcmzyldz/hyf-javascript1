@@ -1,5 +1,5 @@
 # First Part Homework Javascript1
-Resource: [freeCodeCamp](https://www.freecodecamp.org/)
+
 [My FreeCodeCamp Portfolio](https://www.freecodecamp.org/alfiyusrina)
 ## 1. Comment Your Code
 
@@ -592,3 +592,5 @@ return "Hole-in-one!";
 
 golfScore(5, 4);
 ```
+
+Resource: [freeCodeCamp](https://www.freecodecamp.org/)
