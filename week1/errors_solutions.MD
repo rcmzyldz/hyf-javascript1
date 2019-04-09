@@ -193,7 +193,7 @@ classification:
 the fix:
 
 ```js
-'<p>Click here to <a href="#Home">return home</a></p>';
+let innerHtml = '<p>Click here to <a href="#Home">return home</a></p>';
 ```
 
 my notes: Quoting Strings with single quotes.
