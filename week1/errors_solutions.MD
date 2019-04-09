@@ -1,7 +1,7 @@
 # Second Part Homework
 Resource: [Janke Learning Errors](https://github.com/janke-learning/errors/blob/master/README.md)
 
-## 1. Malfomed while loop
+## 1. Malformed while loop
 broken code:
 ```js
 let value = 0;
@@ -80,7 +80,8 @@ classification:
 
 the fix:
 ```js
-
+let x = {b:'e'};
+let y = x.b;
 ```
 my notes: There is a non-existent variable referenced somewhere. This variable needs to be declared, or make sure it is available in the current script or scope.
 
@@ -101,7 +102,8 @@ classification:
 
 the fix:
 ```js
-let a = 'this is two lines';
+let a = 'this is \
+two lines';
 ```
 my notes: A specific language construct was expected, but something else was provided. This is a simple typo.
 
