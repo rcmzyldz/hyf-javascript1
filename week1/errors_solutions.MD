@@ -176,22 +176,26 @@ my notes: Brackets for ```param``` is missing,  so the argument can't be passed 
 
 ## 9. Improper nested quotes 1
 broken code:
+
 ```js
 let innerHtml = "<p>Click here to <a href="#Home">return home</a></p>";
 ```
-error message:
-``
-Uncaught SyntaxError: Invalid or unexpected token
 
+error message:
+
+```
+Uncaught SyntaxError: Invalid or unexpected token
 ```
 classification:
 * creation phase
 * syntax
 
 the fix:
+
 ```js
 '<p>Click here to <a href="#Home">return home</a></p>';
 ```
+
 my notes: Quoting Strings with single quotes.
 
 ## 10.Improper nested quotes 2
@@ -200,7 +204,8 @@ broken code:
 let nested_messages = 'remind yourself ''i can do this!'' at least once a day';
 ```
 error message:
-```Uncaught SyntaxError: Unexpected string
+```
+Uncaught SyntaxError: Unexpected string
 ```
 classification:
 * creation phase
@@ -214,6 +219,7 @@ my notes: Fixed it with concatenating Strings with plus operator.
 
 ## 11. Reassigning to constant
 broken code:
+
 ```js
 const a = 9;
 a = 0;
@@ -221,12 +227,7 @@ a = 0;
 error message:
 ```
 Uncaught SyntaxError: Identifier 'a' has already been declared
-    at <anonymous>:1:1
-
-```
-```
 TypeError: Assignment to constant variable.
-
 ```
 
 classification:
@@ -247,7 +248,8 @@ const a;
 a = 0;
 ```
 error message:
-```Uncaught SyntaxError: Missing initializer in const declaration
+```
+Uncaught SyntaxError: Missing initializer in const declaration
 ```
 classification:
 * creation phase
@@ -261,20 +263,26 @@ my notes: **An initializer for a constant is required.** You must specify its va
 
 ## 13. Is not a function
 broken code:
+
 ```js
 let array = [];
 array.length()
 ```
 error message:
-```Uncaught TypeError: array.length is not a function
+
 ```
+Uncaught TypeError: array.length is not a function
+```
+
 classification:
 * execution phase
 * semantic
 
 the fix:
+
 ```js
 let array = [];
 array.length;
 ```
+
 my notes: It attempted to call a value from a function, but the value is not actually a function. The ```length``` property is an instance of type Array sets or returns the number of elements in that array, thus not a function.
