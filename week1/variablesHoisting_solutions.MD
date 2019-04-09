@@ -21,13 +21,17 @@ To reassign variables so that at each step of execution the variables spell out 
 1. Without extra holder variables:
 * challenges:
     1. [the toad reads me](https://goo.gl/imKwgj)
-    solution :
+
+      solution :
     1. [eating meat every meal](https://goo.gl/cwZijk)
-    solution :
+
+      solution :
     1. [many men may melt my mind](https://goo.gl/16C62t)
-    solution :
+
+      solution :
     1. [if fir trees ever fall](https://goo.gl/8y5Lh2)
-    solution :
+
+      solution :
 2. With extra holder variables:
 * challenges:
     1. [the toad reads me](https://goo.gl/4eqhLb)
