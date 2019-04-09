@@ -111,7 +111,9 @@ broken code:
 let a = 1:
 ```
 error message:
-```Uncaught SyntaxError: Unexpected token :
+```
+Uncaught SyntaxError: Unexpected token :
+
 ```
 classification:
 * creation phase
@@ -129,7 +131,9 @@ broken code:
 let myArray = [1, 2, 3;
 ```
 error message:
-```Uncaught SyntaxError: Unexpected token ;
+```
+Uncaught SyntaxError: Unexpected token ;
+
 ```
 classification:
 * creation phase
@@ -255,7 +259,6 @@ array.length()
 ```
 error message:
 ```Uncaught TypeError: array.length is not a function
-    at <anonymous>:2:7
 ```
 classification:
 * execution phase
