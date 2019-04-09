@@ -1,4 +1,4 @@
-# Second Part Homework Javascript1
+# Second Part Homework
 Resource: [Janke Learning Errors](https://github.com/janke-learning/errors/blob/master/README.md)
 
 ## 1. Malfomed while loop

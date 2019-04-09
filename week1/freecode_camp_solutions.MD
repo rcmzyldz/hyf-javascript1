@@ -1,4 +1,4 @@
-# First Part Homework Javascript1
+# First Part Homework
 
 [My FreeCodeCamp Portfolio](https://www.freecodecamp.org/alfiyusrina)
 ## 1. Comment Your Code
