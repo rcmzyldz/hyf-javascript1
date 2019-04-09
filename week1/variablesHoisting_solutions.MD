@@ -61,9 +61,20 @@ Resource: [Janke Learning Variables & Hoisting](https://github.com/janke-learnin
     c = _; //y
     ```
     1. [the fifth](https://goo.gl/gDaKNi)
-    solution : [pytut]()
+    solution : [pytut](http://www.pythontutor.com/javascript.html#code=let%20a%20%3D%20%22z%22,%20b%20%3D%20%22y%22,%20c%20%3D%20%22x%22,%20d%20%3D%20%22w%22,%20e%20%3D%20%22v%22%3B%0Alet%20_%20%3D%20'%20'%3B%0A%0A//%20can%20be%20done%20in%206%20lines%0A//%20vwxyz%0A_%20%3D%20a%3B%20//z%0Aa%20%3D%20e%3B%20//v%0Ae%20%3D%20_%3B%20//z%0A_%20%3D%20b%3B%20//y%0Ab%20%3D%20d%3B%20//w%0Ad%20%3D%20_%3B%20//y%0A%0A%0A&curInstr=8&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
     The fix
     ```js
+    let a = "z", b = "y", c = "x", d = "w", e = "v";
+    let _ = ' ';
+
+    // can be done in 6 lines
+    // vwxyz
+    _ = a; //z
+    a = e; //v
+    e = _; //z
+    _ = b; //y
+    b = d; //w
+    d = _; //y
     ```
 
 ## Sentences
