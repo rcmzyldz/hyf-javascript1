@@ -102,8 +102,7 @@ classification:
 
 the fix:
 ```js
-let a = 'this is \
-two lines';
+let a = 'this is\ntwo lines';
 ```
 my notes: A specific language construct was expected, but something else was provided. This is a simple typo.
 
@@ -215,9 +214,9 @@ classification:
 
 the fix:
 ```js
-let nested_messages = 'remind yourself ' + 'i can do this!' + ' at least once a day';
+let nested_messages = 'remind yourself \'i can do this!\' at least once a day';
 ```
-my notes: Fixed it with concatenating Strings with plus operator.
+my notes: Fixed it backlash.
 
 ## 11. Reassigning to constant
 broken code:
