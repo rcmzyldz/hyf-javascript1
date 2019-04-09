@@ -1,7 +1,7 @@
 # Second Part Homework Javascript1
-Resource: [Janke Learning Errors](https://github.com/janke-learning/errors#missing-variable-name)
+Resource: [Janke Learning Errors](https://github.com/janke-learning/errors/blob/master/README.md)
 
-## 1. malfomed while loop (completed example)
+## 1. Malfomed while loop
 broken code:
 ```js
 let value = 0;
@@ -24,8 +24,26 @@ while (value < 9) {
   value++;
 };
 ```
-your notes:
-## 2. missing variable name
+## 2. Missing variable name
+
+broken code:
+```js
+var = 5;
+```
+error message:
+```js
+Uncaught SyntaxError: Unexpected token =
+```
+classification:
+* creation phase
+* syntax
+
+the fix:
+```js
+var five = 5;
+```
+my notes: always give a name to your variables.
+
 ## 3. too-far object access
 ## 4. access property direclty
 ## 5. improper multi-line string
