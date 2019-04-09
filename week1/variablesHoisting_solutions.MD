@@ -2,7 +2,7 @@
 Resource: [Janke Learning Variables & Hoisting](https://github.com/janke-learning/variables-and-hoisting/blob/master/README.md)
 
 ## Swaps
-will give you a bunch of variables with the wrong value assigned and a temporary variable you can use for storing values.
+Wll give you a bunch of variables with the wrong value assigned and a temporary variable you can use for storing values.
 
 * challenges
     1. [the first](https://goo.gl/k9jdZy)
@@ -22,7 +22,16 @@ To reassign variables so that at each step of execution the variables spell out 
 * challenges:
     1. [the toad reads me](https://goo.gl/imKwgj)
 
-      solution :
+      solution : [pytut](http://www.pythontutor.com/javascript.html#code=let%20a%20%3D%20%22b%22,%20b%20%3D%20%22a%22%3B%0Alet%20_%20%3D%20'%20'%3B%0A%0A_%20%3D%20b%3B%0Ab%20%3D%20a%3B%0Aa%20%3D%20_%3B&curInstr=5&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+
+      ```js
+      let a = "b", b = "a";
+      let _ = ' ';
+      _ = b;
+      b = a;
+      a = _;
+      ```
+
     1. [eating meat every meal](https://goo.gl/cwZijk)
 
       solution :
