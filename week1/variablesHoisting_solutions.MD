@@ -47,11 +47,24 @@ Resource: [Janke Learning Variables & Hoisting](https://github.com/janke-learnin
     ```
 
     1. [the fourth](https://goo.gl/nTA1DG)
-    solution : [pytut]
+    solution : [pytut](http://www.pythontutor.com/javascript.html#code=let%20a%20%3D%20%22z%22,%20b%20%3D%20%22y%22,%20c%20%3D%20%22x%22,%20d%20%3D%20%22w%22%3B%0Alet%20_%20%3D%20'%20'%3B%0A%0A//%20can%20be%20done%20in%206%20lines%0A//wxyz%0A_%20%3D%20a%3B%20//z%0Aa%20%3D%20d%3B%20//w%0Ad%20%3D%20_%3B%20//z%0A_%20%3D%20b%3B%20//y%0Ab%20%3D%20c%3B%20//x%0Ac%20%3D%20_%3B%20//y%0A%0A&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
     The fix
+    ```js
+    let a = "z", b = "y", c = "x", d = "w";
+    let _ = ' ';
+    //wxyz
+    _ = a; //z
+    a = d; //w
+    d = _; //z
+    _ = b; //y
+    b = c; //x
+    c = _; //y
+    ```
     1. [the fifth](https://goo.gl/gDaKNi)
-    solution : [pytut]
+    solution : [pytut]()
     The fix
+    ```js
+    ```
 
 ## Sentences
 To reassign variables so that at each step of execution the variables spell out the next word in a sentence.
