@@ -155,7 +155,9 @@ function getNine {
 let result = getNine();
 ```
 error message:
-```Uncaught SyntaxError: Unexpected token {
+```
+Uncaught SyntaxError: Unexpected token {
+
 ```
 classification:
 * creation phase
@@ -178,7 +180,9 @@ broken code:
 let innerHtml = "<p>Click here to <a href="#Home">return home</a></p>";
 ```
 error message:
-```Uncaught SyntaxError: Invalid or unexpected token
+``
+Uncaught SyntaxError: Invalid or unexpected token
+
 ```
 classification:
 * creation phase
@@ -215,12 +219,16 @@ const a = 9;
 a = 0;
 ```
 error message:
-```Uncaught SyntaxError: Identifier 'a' has already been declared
+```
+Uncaught SyntaxError: Identifier 'a' has already been declared
     at <anonymous>:1:1
+
 ```
 ```
 TypeError: Assignment to constant variable.
+
 ```
+
 classification:
 * Execution phase
 * Semantic
