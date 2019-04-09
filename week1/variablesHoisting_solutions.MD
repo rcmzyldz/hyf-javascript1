@@ -48,6 +48,8 @@ Resource: [Janke Learning Variables & Hoisting](https://github.com/janke-learnin
 
     1. [the fourth](https://goo.gl/nTA1DG)
     solution : [pytut](http://www.pythontutor.com/javascript.html#code=let%20a%20%3D%20%22z%22,%20b%20%3D%20%22y%22,%20c%20%3D%20%22x%22,%20d%20%3D%20%22w%22%3B%0Alet%20_%20%3D%20'%20'%3B%0A%0A//%20can%20be%20done%20in%206%20lines%0A//wxyz%0A_%20%3D%20a%3B%20//z%0Aa%20%3D%20d%3B%20//w%0Ad%20%3D%20_%3B%20//z%0A_%20%3D%20b%3B%20//y%0Ab%20%3D%20c%3B%20//x%0Ac%20%3D%20_%3B%20//y%0A%0A&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+
+
     The fix
     ```js
     let a = "z", b = "y", c = "x", d = "w";
@@ -62,12 +64,13 @@ Resource: [Janke Learning Variables & Hoisting](https://github.com/janke-learnin
     ```
     1. [the fifth](https://goo.gl/gDaKNi)
     solution : [pytut](http://www.pythontutor.com/javascript.html#code=let%20a%20%3D%20%22z%22,%20b%20%3D%20%22y%22,%20c%20%3D%20%22x%22,%20d%20%3D%20%22w%22,%20e%20%3D%20%22v%22%3B%0Alet%20_%20%3D%20'%20'%3B%0A%0A//%20can%20be%20done%20in%206%20lines%0A//%20vwxyz%0A_%20%3D%20a%3B%20//z%0Aa%20%3D%20e%3B%20//v%0Ae%20%3D%20_%3B%20//z%0A_%20%3D%20b%3B%20//y%0Ab%20%3D%20d%3B%20//w%0Ad%20%3D%20_%3B%20//y%0A%0A%0A&curInstr=8&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+
+
     The fix
     ```js
     let a = "z", b = "y", c = "x", d = "w", e = "v";
     let _ = ' ';
 
-    // can be done in 6 lines
     // vwxyz
     _ = a; //z
     a = e; //v
@@ -83,24 +86,101 @@ To reassign variables so that at each step of execution the variables spell out 
 * challenges:
     1. [the toad reads me](https://goo.gl/imKwgj)
 
-      solution :
+      solution : [pytut](http://www.pythontutor.com/javascript.html#code=//%20the%20toad%20reads%20me%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20%22%20%22,%20_2%20%3D%20%22%20%22,%20_3%20%3D%20%22%20%22,%20_4%20%3D%20%22%20%22,%20_5%20%3D%20%22%20%22%3B%0A%0A//%20--%20you%20write%20this%20--%0A%0A//%20the%0A_1%20%3D%20%22t%22,%20_2%20%3D%20%22h%22,%20_3%20%3D%20%22e%22%3B%0A%0A//%20toad%0A_2%20%3D%20%22o%22,%20_3%20%3D%20%22a%22,%20_4%20%3D%20%22d%22%3B%0A%0A//%20reads%0A_1%20%3D%20%22r%22,%20_2%20%3D%20%22e%22,%20_5%20%3D%20%22s%22%3B%0A%0A//%20me%0A_1%20%3D%20%22m%22,%20_3%20%3D%20%22%20%22,%20_4%20%3D%20%22%20%22,%20_5%20%3D%20%22%20%22%3B&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+
+      ```js
+      let _1 = " ", _2 = " ", _3 = " ", _4 = " ", _5 = " ";
+      // the
+      _1 = "t", _2 = "h", _3 = "e";
+
+      // toad
+      _2 = "o", _3 = "a", _4 = "d";
+
+      // reads
+      _1 = "r", _2 = "e", _5 = "s";
+
+      // me
+      _1 = "m", _3 = " ", _4 = " ", _5 = " ";
+      ```
 
     1. [eating meat every meal](https://goo.gl/cwZijk)
 
-      solution :
+      solution : [pytut](http://www.pythontutor.com/javascript.html#code=//%20eating%20meat%20every%20meal%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20',%20_5%20%3D%20'%20',%20_6%3D%20'%20'%3B%0A%0A//%20--%20you%20write%20this%20--%0A%0A//%20eating%0A_1%20%3D%20%22e%22%20,%20_2%20%3D%20%22a%22%20,%20_3%20%3D%20%22t%22%20,%20_4%20%3D%20%22i%22%20,%20_5%20%3D%20%22n%22%20,%20_6%20%3D%20%22g%22%3B%0A//%20meat%0A%20_4%20%3D%20_3%20,%20_3%20%3D%20_2%20,%20_2%20%3D%20_1,%20_1%20%3D%20%22m%22%20,%20_5%20%3D%20%22%20%22%20,%20_6%20%3D%20%22%20%22%3B%0A//%20every%0A_1%20%3D%20_2,%20_2%20%3D%20%22v%22%20,%20_3%20%3D%20_1%20,%20_4%20%3D%20%22r%22,%20_5%20%3D%20%22y%22%20,%20_6%20%3D%20%22%20%22%3B%0A%0A//%20meal%0A_2%20%3D%20_1%20,%20_1%20%3D%20%22m%22,%20_3%20%3D%20%22a%22,%20_4%20%3D%20%22l%22,%20_5%20%3D%20%22%20%22%3B&curInstr=5&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+
+      the Fix
+      ```js
+      // eating
+      _1 = "e" , _2 = "a" , _3 = "t" , _4 = "i" , _5 = "n" , _6 = "g";
+      // meat
+      _4 = _3 , _3 = _2 , _2 = _1, _1 = "m" , _5 = " " , _6 = " ";
+      // every
+      _1 = _2, _2 = "v" , _3 = _1 , _4 = "r", _5 = "y" , _6 = " ";
+
+      // meal
+      _2 = _1 , _1 = "m", _3 = "a", _4 = "l", _5 = " ";
+      ```
+
     1. [many men may melt my mind](https://goo.gl/16C62t)
 
-      solution :
+      solution : [pytut](http://www.pythontutor.com/javascript.html#code=//%20many%20men%20may%20melt%20my%20mind%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20'%3B%0A%0A//%20--%20you%20write%20this%20--%0A%0A//%20many%0A_1%20%3D%20%22m%22%20,%20_2%20%3D%20%22a%22,%20_3%20%3D%20%22n%22%20,%20_4%20%3D%20%22y%22%3B%0A//%20men%0A_2%20%3D%20%22e%22,%20_3%20%3D%20%22n%22%20,%20_4%20%3D%20%22%20%22%3B%0A//%20may%0A_2%20%3D%20%22a%22,%20_3%20%3D%20%22y%22%20,%20_4%20%3D%20%22%20%22%3B%0A%0A//%20melt%0A_2%20%3D%20%22e%22,%20_3%20%3D%20%22l%22%20,%20_4%20%3D%20%22t%22%3B%0A%0A//%20my%0A_2%20%3D%20%22y%22,%20_3%20%3D%20%22%20%22%20,%20_4%20%3D%20%22%20%22%3B%0A%0A//%20mind%0A_2%20%3D%20%22i%22,%20_3%20%3D%20%22n%22%20,%20_4%20%3D%20%22d%22%3B&curInstr=7&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+      the Fix
+      ```js
+        // many
+        _1 = "m" , _2 = "a", _3 = "n" , _4 = "y";
+        // men
+        _2 = "e", _3 = "n" , _4 = " ";
+        // may
+        _2 = "a", _3 = "y" , _4 = " ";
+
+        // melt
+        _2 = "e", _3 = "l" , _4 = "t";
+
+        // my
+        _2 = "y", _3 = " " , _4 = " ";
+
+        // mind
+        _2 = "i", _3 = "n" , _4 = "d";
+      ```
     1. [if fir trees ever fall](https://goo.gl/8y5Lh2)
 
-      solution :
+      solution : [pytut](http://www.pythontutor.com/javascript.html#code=//%20if%20fir%20trees%20ever%20fall%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20',%20_5%20%3D%20'%20'%3B%0A%0A//%20--%20you%20write%20this%20--%0A%0A//%20if%0A_1%20%3D%20'i',%20_2%20%3D%20'f',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20',%20_5%20%3D%20'%20'%3B%0A//%20fir%0A%20_1%20%3D%20_2%20,%20_2%20%3D%20%22i%22%20,%20_3%20%3D%20'r',%20_4%20%3D%20'%20',%20_5%20%3D%20'%20'%3B%0A%0A//%20trees%0A%20_1%20%3D%20%22t%22%20,%20_2%20%3D%20_3,%20_3%20%3D%20'e',%20_4%20%3D%20_3,%20_5%20%3D%20's'%3B%0A%0A//%20ever%0A%20_4%20%3D%20_2,%20_1%20%3D%20_3%20,%20_2%20%3D%20%22v%22,%20_3%20%3D%20_1%20,%20_5%20%3D%20''%3B%0A%0A//%20fall%0A%20_1%20%3D%20%22f%22%20,%20_2%20%3D%20%22a%22,%20_3%20%3D%20'l',%20_4%20%3D%20_3,%20_5%20%3D%20'%20'%3B&curInstr=6&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+      the Fix
+      ```js
+
+        // if
+        _1 = 'i', _2 = 'f', _3 = ' ', _4 = ' ', _5 = ' ';
+        // fir
+        _1 = _2 , _2 = "i" , _3 = 'r', _4 = ' ', _5 = ' ';
+
+        // trees
+        _1 = "t" , _2 = _3, _3 = 'e', _4 = _3, _5 = 's';
+
+        // ever
+        _4 = _2, _1 = _3 , _2 = "v", _3 = _1 , _5 = '';
+
+        // fall
+        _1 = "f" , _2 = "a", _3 = 'l', _4 = _3, _5 = ' ';
+      ```
 2. With extra holder variables:
 * challenges:
     1. [the toad reads me](https://goo.gl/4eqhLb)
-    solution :
+
+    solution : [pytut]()
+    ```js
+
+    ```
     1. [eating meat every meal](https://goo.gl/F9Njwp)
-    solution :
+
+    solution : [pytut]()
+    ```js
+
+    ```
     1. [many men may melt my mind](http://www.pythontutor.com/javascript.html#code=//%20many%20men%20may%20melt%20my%20mind%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20'%3B%0Alet%20x,%20y%3B%0A//%20--%20you%20write%20this%20--%0A%0A//%20many%0A%0A//%20men%0A%0A//%20may%0A%0A//%20melt%0A%0A//%20my%0A%0A//%20mind&mode=edit&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
-    solution :
+
+    solution : [pytut]()
+    ```js
+
+    ```
+
     1. [if fir trees ever fall](https://goo.gl/BCC6pz)
     solution :
