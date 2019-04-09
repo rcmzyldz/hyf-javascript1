@@ -63,8 +63,8 @@ Resource: [Janke Learning Variables & Hoisting](https://github.com/janke-learnin
     c = _; //y
     ```
     1. [the fifth](https://goo.gl/gDaKNi)
-    solution : [pytut](http://www.pythontutor.com/javascript.html#code=let%20a%20%3D%20%22z%22,%20b%20%3D%20%22y%22,%20c%20%3D%20%22x%22,%20d%20%3D%20%22w%22,%20e%20%3D%20%22v%22%3B%0Alet%20_%20%3D%20'%20'%3B%0A%0A//%20can%20be%20done%20in%206%20lines%0A//%20vwxyz%0A_%20%3D%20a%3B%20//z%0Aa%20%3D%20e%3B%20//v%0Ae%20%3D%20_%3B%20//z%0A_%20%3D%20b%3B%20//y%0Ab%20%3D%20d%3B%20//w%0Ad%20%3D%20_%3B%20//y%0A%0A%0A&curInstr=8&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 
+    solution : [pytut](http://www.pythontutor.com/javascript.html#code=let%20a%20%3D%20%22z%22,%20b%20%3D%20%22y%22,%20c%20%3D%20%22x%22,%20d%20%3D%20%22w%22,%20e%20%3D%20%22v%22%3B%0Alet%20_%20%3D%20'%20'%3B%0A%0A//%20can%20be%20done%20in%206%20lines%0A//%20vwxyz%0A_%20%3D%20a%3B%20//z%0Aa%20%3D%20e%3B%20//v%0Ae%20%3D%20_%3B%20//z%0A_%20%3D%20b%3B%20//y%0Ab%20%3D%20d%3B%20//w%0Ad%20%3D%20_%3B%20//y%0A%0A%0A&curInstr=8&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 
     The fix
     ```js
@@ -84,9 +84,12 @@ Resource: [Janke Learning Variables & Hoisting](https://github.com/janke-learnin
 To reassign variables so that at each step of execution the variables spell out the next word in a sentence.
 1. Without extra holder variables:
 * challenges:
+
     1. [the toad reads me](https://goo.gl/imKwgj)
 
       solution : [pytut](http://www.pythontutor.com/javascript.html#code=//%20the%20toad%20reads%20me%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20%22%20%22,%20_2%20%3D%20%22%20%22,%20_3%20%3D%20%22%20%22,%20_4%20%3D%20%22%20%22,%20_5%20%3D%20%22%20%22%3B%0A%0A//%20--%20you%20write%20this%20--%0A%0A//%20the%0A_1%20%3D%20%22t%22,%20_2%20%3D%20%22h%22,%20_3%20%3D%20%22e%22%3B%0A%0A//%20toad%0A_2%20%3D%20%22o%22,%20_3%20%3D%20%22a%22,%20_4%20%3D%20%22d%22%3B%0A%0A//%20reads%0A_1%20%3D%20%22r%22,%20_2%20%3D%20%22e%22,%20_5%20%3D%20%22s%22%3B%0A%0A//%20me%0A_1%20%3D%20%22m%22,%20_3%20%3D%20%22%20%22,%20_4%20%3D%20%22%20%22,%20_5%20%3D%20%22%20%22%3B&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+
+      code:
 
       ```js
       let _1 = " ", _2 = " ", _3 = " ", _4 = " ", _5 = " ";
@@ -123,7 +126,10 @@ To reassign variables so that at each step of execution the variables spell out 
     1. [many men may melt my mind](https://goo.gl/16C62t)
 
       solution : [pytut](http://www.pythontutor.com/javascript.html#code=//%20many%20men%20may%20melt%20my%20mind%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20'%3B%0A%0A//%20--%20you%20write%20this%20--%0A%0A//%20many%0A_1%20%3D%20%22m%22%20,%20_2%20%3D%20%22a%22,%20_3%20%3D%20%22n%22%20,%20_4%20%3D%20%22y%22%3B%0A//%20men%0A_2%20%3D%20%22e%22,%20_3%20%3D%20%22n%22%20,%20_4%20%3D%20%22%20%22%3B%0A//%20may%0A_2%20%3D%20%22a%22,%20_3%20%3D%20%22y%22%20,%20_4%20%3D%20%22%20%22%3B%0A%0A//%20melt%0A_2%20%3D%20%22e%22,%20_3%20%3D%20%22l%22%20,%20_4%20%3D%20%22t%22%3B%0A%0A//%20my%0A_2%20%3D%20%22y%22,%20_3%20%3D%20%22%20%22%20,%20_4%20%3D%20%22%20%22%3B%0A%0A//%20mind%0A_2%20%3D%20%22i%22,%20_3%20%3D%20%22n%22%20,%20_4%20%3D%20%22d%22%3B&curInstr=7&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+
+
       the Fix
+
       ```js
         // many
         _1 = "m" , _2 = "a", _3 = "n" , _4 = "y";
@@ -141,9 +147,12 @@ To reassign variables so that at each step of execution the variables spell out 
         // mind
         _2 = "i", _3 = "n" , _4 = "d";
       ```
+
     1. [if fir trees ever fall](https://goo.gl/8y5Lh2)
 
       solution : [pytut](http://www.pythontutor.com/javascript.html#code=//%20if%20fir%20trees%20ever%20fall%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20',%20_5%20%3D%20'%20'%3B%0A%0A//%20--%20you%20write%20this%20--%0A%0A//%20if%0A_1%20%3D%20'i',%20_2%20%3D%20'f',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20',%20_5%20%3D%20'%20'%3B%0A//%20fir%0A%20_1%20%3D%20_2%20,%20_2%20%3D%20%22i%22%20,%20_3%20%3D%20'r',%20_4%20%3D%20'%20',%20_5%20%3D%20'%20'%3B%0A%0A//%20trees%0A%20_1%20%3D%20%22t%22%20,%20_2%20%3D%20_3,%20_3%20%3D%20'e',%20_4%20%3D%20_3,%20_5%20%3D%20's'%3B%0A%0A//%20ever%0A%20_4%20%3D%20_2,%20_1%20%3D%20_3%20,%20_2%20%3D%20%22v%22,%20_3%20%3D%20_1%20,%20_5%20%3D%20''%3B%0A%0A//%20fall%0A%20_1%20%3D%20%22f%22%20,%20_2%20%3D%20%22a%22,%20_3%20%3D%20'l',%20_4%20%3D%20_3,%20_5%20%3D%20'%20'%3B&curInstr=6&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+
+
       the Fix
       ```js
 
@@ -161,6 +170,7 @@ To reassign variables so that at each step of execution the variables spell out 
         // fall
         _1 = "f" , _2 = "a", _3 = 'l', _4 = _3, _5 = ' ';
       ```
+
 2. With extra holder variables:
 * challenges:
     1. [the toad reads me](https://goo.gl/4eqhLb)
