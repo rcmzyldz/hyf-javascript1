@@ -36,6 +36,7 @@ Resource: [Janke Learning Variables & Hoisting](https://github.com/janke-learnin
     solution : [pytut](http://www.pythontutor.com/javascript.html#code=let%20a%20%3D%20%22d%22,%20b%20%3D%20%22a%22,%20c%20%3D%20%22b%22,%20d%20%3D%20%22c%22%3B%0Alet%20_%20%3D%20'%20'%3B%0A%0A//%20can%20be%20done%20in%205%20lines%0A_%20%3D%20a%3B%0Aa%20%3D%20b%3B%0Ab%20%3D%20c%3B%0Ac%20%3D%20d%3B%0Ad%20%3D%20_%3B&curInstr=7&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 
     The fix:
+
     ```js
     let a = "d", b = "a", c = "b", d = "c";
     let _ = ' ';
@@ -212,7 +213,7 @@ To reassign variables so that at each step of execution the variables spell out 
 
 
     ```
-    1. [many men may melt my mind]
+    1. [many men may melt my mind](http://www.pythontutor.com/javascript.html#code=//%20many%20men%20may%20melt%20my%20mind%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20'%3B%0Alet%20x,%20y%3B%0A//%20--%20you%20write%20this%20--%0A%0A//%20many%0A%0A//%20men%0A%0A//%20may%0A%0A//%20melt%0A%0A//%20my%0A%0A//%20mind&mode=edit&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 
     solution : [pytut](http://www.pythontutor.com/javascript.html#code=//%20many%20men%20may%20melt%20my%20mind%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20'%3B%0Alet%20x,%20y%3B%0A//%20--%20you%20write%20this%20--%0A%0A//%20many%0A_1%20%3D%20'm',%20_2%20%3D%20'a',%20_3%20%3D%20'n',%20_4%20%3D%20'y'%3B%0A//%20men%0A%20x%20%3D%20_2,%20_2%20%3D%20'e',%20_4%20%3D%20'%20'%3B%0A//%20may%0A%20y%20%3D%20_3,%20_2%20%3D%20x%20,%20_3%20%3D%20%22y%22,%20_4%20%3D%20'%20'%3B%0A%0A//%20melt%0A%20x%20%3D%20_3,%20_2%20%3D%20'e',%20_3%20%3D%20'l',%20_4%20%3D%20't'%3B%0A%0A//%20my%0A_2%20%3D%20x,%20_3%20%3D%20'%20',%20_4%20%3D%20'%20'%3B%0A%0A//%20mind%0A%20_2%20%3D%20'i',%20_4%20%3D%20'd',%20_3%20%3D%20y,%20x%20%3D%20'%20',%20y%20%3D%20'%20'%3B&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 
@@ -241,17 +242,17 @@ To reassign variables so that at each step of execution the variables spell out 
     solution : [pytut]( http://www.pythontutor.com/javascript.html#code=//%20if%20fir%20trees%20ever%20fall%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20',%20_5%20%3D%20'%20'%3B%0Alet%20x%20%3D%20'%20',%20y%20%3D%20'%20'%3B%20//%20to%20save%20extra%20values%20for%20later%0A%0A//%20--%20you%20write%20this%20--%0A%0A//%20if%0A%20_1%20%3D%20'i',%20_2%20%3D%20'f',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20',%20_5%20%3D%20'%20',%20x%20%3D%20'%20',%20y%20%3D%20'%20'%3B%0A//%20fir%0Ax%20%3D%20_1%20,%20_1%20%3D%20_2,%20_2%20%3D%20x%20,%20_3%20%3D%20'r',%20_4%20%3D%20'%20',%20_5%20%3D%20'%20',%20x%20%3D%20'%20',%20y%20%3D%20'%20'%3B%0A//%20trees%0Ay%20%3D_1,%20x%20%3D%20_3,%20_1%20%3D%20't',%20_2%20%3D%20x,%20_3%20%3D%20'e',%20_4%20%3D%20_3,%20_5%20%3D%20's',%20x%20%3D%20'%20'%3B%0A//%20ever%0Ax%20%3D%20_2,%20_1%20%3D%20_3%20,%20_2%20%3D%20'v',%20_3%20%3D%20_1,%20_4%20%3D%20x,%20_5%20%3D%20'%20',%20x%20%3D%20'%20'%3B%0A//%20fall%0A_1%20%3D%20y,%20_2%20%3D%20'a',%20_3%20%3D%20'l',%20_4%20%3D%20_3,%20_5%20%3D%20'%20',%20x%20%3D%20'%20',%20y%20%3D%20'%20'%3B%0A&curInstr=7&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 
 
-```js
+    ```js
 
-// if
- _1 = 'i', _2 = 'f', _3 = ' ', _4 = ' ', _5 = ' ', x = ' ', y = ' ';
-// fir
-x = _1 , _1 = _2, _2 = x , _3 = 'r', _4 = ' ', _5 = ' ', x = ' ', y = ' ';
-// trees
-y =_1, x = _3, _1 = 't', _2 = x, _3 = 'e', _4 = _3, _5 = 's', x = ' ';
-// ever
-x = _2, _1 = _3 , _2 = 'v', _3 = _1, _4 = x, _5 = ' ', x = ' ';
-// fall
-_1 = y, _2 = 'a', _3 = 'l', _4 = _3, _5 = ' ', x = ' ', y = ' ';
+    // if
+    _1 = 'i', _2 = 'f', _3 = ' ', _4 = ' ', _5 = ' ', x = ' ', y = ' ';
+    // fir
+    x = _1 , _1 = _2, _2 = x , _3 = 'r', _4 = ' ', _5 = ' ', x = ' ', y = ' ';
+    // trees
+    y =_1, x = _3, _1 = 't', _2 = x, _3 = 'e', _4 = _3, _5 = 's', x = ' ';
+    // ever
+    x = _2, _1 = _3 , _2 = 'v', _3 = _1, _4 = x, _5 = ' ', x = ' ';
+    // fall
+    _1 = y, _2 = 'a', _3 = 'l', _4 = _3, _5 = ' ', x = ' ', y = ' ';
 
-```
+    ```
