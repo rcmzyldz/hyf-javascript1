@@ -87,6 +87,9 @@ To reassign variables so that at each step of execution the variables spell out 
 * challenges:
 
     1. [the toad reads me](https://goo.gl/imKwgj)
+
+    solution: [pytut](http://www.pythontutor.com/javascript.html#code=//%20the%20toad%20reads%20me%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20%22%20%22,%20_2%20%3D%20%22%20%22,%20_3%20%3D%20%22%20%22,%20_4%20%3D%20%22%20%22,%20_5%20%3D%20%22%20%22%3B%0A%0A//%20--%20you%20write%20this%20--%0A%0A//%20the%0A_1%20%3D%20%22t%22,%20_2%20%3D%20%22h%22,%20_3%20%3D%20%22e%22%3B%0A%0A//%20toad%0A_2%20%3D%20%22o%22,%20_3%20%3D%20%22a%22,%20_4%20%3D%20%22d%22%3B%0A%0A//%20reads%0A_1%20%3D%20%22r%22,%20_2%20%3D%20%22e%22,%20_5%20%3D%20%22s%22%3B%0A%0A//%20me%0A_1%20%3D%20%22m%22,%20_3%20%3D%20%22%20%22,%20_4%20%3D%20%22%20%22,%20_5%20%3D%20%22%20%22%3B&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+
     ```js
     let _1 = " ", _2 = " ", _3 = " ", _4 = " ", _5 = " ";
     // the
