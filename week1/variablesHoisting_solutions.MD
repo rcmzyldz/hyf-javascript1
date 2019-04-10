@@ -105,8 +105,8 @@ To reassign variables so that at each step of execution the variables spell out 
       solution : [pytut](http://www.pythontutor.com/javascript.html#code=//%20eating%20meat%20every%20meal%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20',%20_5%20%3D%20'%20',%20_6%3D%20'%20'%3B%0A%0A//%20--%20you%20write%20this%20--%0A%0A//%20eating%0A_1%20%3D%20%22e%22%20,%20_2%20%3D%20%22a%22%20,%20_3%20%3D%20%22t%22%20,%20_4%20%3D%20%22i%22%20,%20_5%20%3D%20%22n%22%20,%20_6%20%3D%20%22g%22%3B%0A//%20meat%0A%20_4%20%3D%20_3%20,%20_3%20%3D%20_2%20,%20_2%20%3D%20_1,%20_1%20%3D%20%22m%22%20,%20_5%20%3D%20%22%20%22%20,%20_6%20%3D%20%22%20%22%3B%0A//%20every%0A_1%20%3D%20_2,%20_2%20%3D%20%22v%22%20,%20_3%20%3D%20_1%20,%20_4%20%3D%20%22r%22,%20_5%20%3D%20%22y%22%20,%20_6%20%3D%20%22%20%22%3B%0A%0A//%20meal%0A_2%20%3D%20_1%20,%20_1%20%3D%20%22m%22,%20_3%20%3D%20%22a%22,%20_4%20%3D%20%22l%22,%20_5%20%3D%20%22%20%22%3B&curInstr=5&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 
       the Fix
-      ```js
-      // eating
+
+      ```js // eating
       _1 = "e" , _2 = "a" , _3 = "t" , _4 = "i" , _5 = "n" , _6 = "g";
       // meat
       _4 = _3 , _3 = _2 , _2 = _1, _1 = "m" , _5 = " " , _6 = " ";
@@ -114,8 +114,7 @@ To reassign variables so that at each step of execution the variables spell out 
       _1 = _2, _2 = "v" , _3 = _1 , _4 = "r", _5 = "y" , _6 = " ";
 
       // meal
-      _2 = _1 , _1 = "m", _3 = "a", _4 = "l", _5 = " ";
-      ```
+      _2 = _1 , _1 = "m", _3 = "a", _4 = "l", _5 = " "; ```
 
     1. [many men may melt my mind](https://goo.gl/16C62t)
 
