@@ -87,18 +87,17 @@ To reassign variables so that at each step of execution the variables spell out 
 * challenges:
 
     1. [the toad reads me](https://goo.gl/imKwgj)
-
-      ```js
-        let _1 = " ", _2 = " ", _3 = " ", _4 = " ", _5 = " ";
-        // the
-        _1 = "t", _2 = "h", _3 = "e";
-        // toad
-        _2 = "o", _3 = "a", _4 = "d";
-        // reads
-        _1 = "r", _2 = "e", _5 = "s";
-        // me
-        _1 = "m", _3 = " ", _4 = " ", _5 = " ";
-      ```
+    ```js
+    let _1 = " ", _2 = " ", _3 = " ", _4 = " ", _5 = " ";
+    // the
+    _1 = "t", _2 = "h", _3 = "e";
+    // toad
+    _2 = "o", _3 = "a", _4 = "d";
+    // reads
+    _1 = "r", _2 = "e", _5 = "s";
+    // me
+    _1 = "m", _3 = " ", _4 = " ", _5 = " ";
+    ```
 
     1. [eating meat every meal](https://goo.gl/cwZijk)
 
@@ -106,7 +105,9 @@ To reassign variables so that at each step of execution the variables spell out 
 
       the Fix
 
-      // eating
+      ```js
+
+  // eating
       _1 = "e" , _2 = "a" , _3 = "t" , _4 = "i" , _5 = "n" , _6 = "g";
       // meat
       _4 = _3 , _3 = _2 , _2 = _1, _1 = "m" , _5 = " " , _6 = " ";
@@ -114,7 +115,7 @@ To reassign variables so that at each step of execution the variables spell out 
       _1 = _2, _2 = "v" , _3 = _1 , _4 = "r", _5 = "y" , _6 = " ";
 
       // meal
-      _2 = _1 , _1 = "m", _3 = "a", _4 = "l", _5 = " ";
+      _2 = _1 , _1 = "m", _3 = "a", _4 = "l", _5 = " "; ```
 
     1. [many men may melt my mind](https://goo.gl/16C62t)
 
