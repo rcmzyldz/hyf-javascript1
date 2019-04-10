@@ -87,7 +87,7 @@ To reassign variables so that at each step of execution the variables spell out 
 
     1. [the toad reads me](https://goo.gl/imKwgj)
 
-      solution : [pytut](http://www.pythontutor.com/javascript.html#code=//%20the%20toad%20reads%20me%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20%22%20%22,%20_2%20%3D%20%22%20%22,%20_3%20%3D%20%22%20%22,%20_4%20%3D%20%22%20%22,%20_5%20%3D%20%22%20%22%3B%0A%0A//%20--%20you%20write%20this%20--%0A%0A//%20the%0A_1%20%3D%20%22t%22,%20_2%20%3D%20%22h%22,%20_3%20%3D%20%22e%22%3B%0A%0A//%20toad%0A_2%20%3D%20%22o%22,%20_3%20%3D%20%22a%22,%20_4%20%3D%20%22d%22%3B%0A%0A//%20reads%0A_1%20%3D%20%22r%22,%20_2%20%3D%20%22e%22,%20_5%20%3D%20%22s%22%3B%0A%0A//%20me%0A_1%20%3D%20%22m%22,%20_3%20%3D%20%22%20%22,%20_4%20%3D%20%22%20%22,%20_5%20%3D%20%22%20%22%3B&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+      solution :[pytut](http://www.pythontutor.com/javascript.html#code=//%20the%20toad%20reads%20me%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20%22%20%22,%20_2%20%3D%20%22%20%22,%20_3%20%3D%20%22%20%22,%20_4%20%3D%20%22%20%22,%20_5%20%3D%20%22%20%22%3B%0A%0A//%20--%20you%20write%20this%20--%0A%0A//%20the%0A_1%20%3D%20%22t%22,%20_2%20%3D%20%22h%22,%20_3%20%3D%20%22e%22%3B%0A%0A//%20toad%0A_2%20%3D%20%22o%22,%20_3%20%3D%20%22a%22,%20_4%20%3D%20%22d%22%3B%0A%0A//%20reads%0A_1%20%3D%20%22r%22,%20_2%20%3D%20%22e%22,%20_5%20%3D%20%22s%22%3B%0A%0A//%20me%0A_1%20%3D%20%22m%22,%20_3%20%3D%20%22%20%22,%20_4%20%3D%20%22%20%22,%20_5%20%3D%20%22%20%22%3B&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 
       code:
 
@@ -175,17 +175,44 @@ To reassign variables so that at each step of execution the variables spell out 
 * challenges:
     1. [the toad reads me](https://goo.gl/4eqhLb)
 
-    solution : [pytut]()
-    ```js
+    solution : [pytut]( http://www.pythontutor.com/javascript.html#code=//%20the%20toad%20reads%20me%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20%22%20%22,%20_2%20%3D%20%22%20%22,%20_3%20%3D%20%22%20%22,%20_4%20%3D%20%22%20%22,%20_5%20%3D%20%22%20%22%3B%0Alet%20x%20%3D%20'%20',%20y%20%3D%20'%20'%3B%0A%0A//%20--%20you%20write%20this%20--%0A%0A//%20the%0A_1%20%3D%20%22t%22,%20_2%20%3D%20%22h%22,%20_3%20%3D%20%22e%22%3B%0A%0A//%20toad%0Ax%20%3D%20_2%20,%20_2%20%3D%20%22o%22,%20y%20%3D%20_3,%20%20_3%20%3D%20%22a%22,%20_4%20%3D%20%22d%22%3B%0A%0A//%20reads%0A_1%20%3D%20%22r%22,%20_2%20%3D%20y%20,%20_5%20%3D%20%22s%22,%20x%20%3D%20'%20',%20y%20%3D%20'%20'%3B%0A%0A//%20me%0A_1%20%3D%20%22m%22,%20%20_3%20%3D%20%22%20%22,%20_4%20%3D%20%22%20%22,%20_5%20%3D%20%22%20%22,%20x%20%3D%20'%20',%20y%20%3D%20'%20'%3B&curInstr=6&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 
+    ```js
+    // the
+    _1 = "t", _2 = "h", _3 = "e";
+
+    // toad
+    x = _2 , _2 = "o", y = _3,  _3 = "a", _4 = "d";
+
+    // reads
+    _1 = "r", _2 = y , _5 = "s", x = ' ', y = ' ';
+
+    // me
+    _1 = "m",  _3 = " ", _4 = " ", _5 = " ", x = ' ', y = ' ';
     ```
     1. [eating meat every meal](https://goo.gl/F9Njwp)
 
-    solution : [pytut]()
+    solution : [pytut](http://www.pythontutor.com/javascript.html#code=//%20eating%20meat%20every%20meal%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20',%20_5%20%3D%20'%20',%20_6%3D%20'%20'%3B%0Alet%20x%20%3D%20'%20',%20y%20%3D%20'%20'%3B%0A%0A//%20--%20you%20write%20this%20--%0A%0A//%20eating%0A_1%20%3D%20'e',%20_2%20%3D%20'a',%20_3%20%3D%20't',%20_4%20%3D%20'i',%20_5%20%3D%20'n',%20_6%3D%20'g'%3B%0A%0A//%20meat%0Ax%20%3D%20_1,%20_1%20%3D%20'm',%20y%20%3D%20_2%20,%20%20_2%20%3D%20x,%20_4%20%3D%20_3,%20_3%20%3D%20y%20,%20_5%20%3D%20'%20',%20_6%3D%20'%20'%3B%0A%0A//%20every%0Ay%20%3D%20_3%20,%20x%20%3D%20_1,%20_1%20%3D%20_2%20,%20_3%20%3D%20_2%20,%20_2%20%3D%20'v',%20%20_4%20%3D%20'r',%20_5%20%3D%20'y',%20_6%3D%20'%20'%3B%0A%0A//%20meal%0A%0A_1%20%3D%20x%20,%20_2%20%3D%20_3%20,%20_3%20%3D%20y,%20_4%20%3D%20'l',%20_5%20%3D%20'%20',%20_6%3D%20'%20',%20x%20%3D%20'%20',%20y%20%3D%20'%20'%3B%0A%0A%0A&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D )
+
     ```js
 
+    // eating
+    _1 = 'e', _2 = 'a', _3 = 't', _4 = 'i', _5 = 'n', _6= 'g';
+
+    // meat
+    x = _1, _1 = 'm', y = _2 ,  _2 = x, _4 = _3, _3 = y , _5 = ' ', _6= ' ';
+
+    // every
+    y = _3 , x = _1, _1 = _2 , _3 = _2 , _2 = 'v',  _4 = 'r', _5 = 'y', _6= ' ';
+
+    // meal
+
+    _1 = x , _2 = _3 , _3 = y, _4 = 'l', _5 = ' ', _6= ' ', x = ' ', y = ' ';
+
+
+
     ```
-    1. [many men may melt my mind](http://www.pythontutor.com/javascript.html#code=//%20many%20men%20may%20melt%20my%20mind%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20'%3B%0Alet%20x,%20y%3B%0A//%20--%20you%20write%20this%20--%0A%0A//%20many%0A%0A//%20men%0A%0A//%20may%0A%0A//%20melt%0A%0A//%20my%0A%0A//%20mind&mode=edit&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+    1. [many men may melt my mind]()
 
     solution : [pytut]()
     ```js
