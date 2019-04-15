@@ -41,6 +41,21 @@ My JavaScript Exercise part 1 is [here](https://github.com/AlfiYusrina/hyf-javas
 
 ### Exercise
 ## Adding a Default Option in Switch Statements
+```js
+{  // completed example
+  function f(param_1, param_2, param_3) {
+    var result = param_2 + param_3 + param_1;
+    return result;
+  };
+
+  // set values in the args to pass the assert
+  let arg_1 = "x", arg_2 = "z", arg_3 = "y";
+  let return_val = f(arg_1, arg_2, arg_3);
+
+  console.assert(return_val === "zyx", "example: return_val === " + return_val);
+}
+```
+
 ## Multiple Identical Options in Switch Statements
 ## Replacing If Else Chains with Switch
 ## Returning Boolean Values from Functions
