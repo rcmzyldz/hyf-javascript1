@@ -42,6 +42,65 @@ My JavaScript Exercise part 1 is [here](https://github.com/AlfiYusrina/hyf-javas
 ### Exercise
 ## Adding a Default Option in Switch Statements
 ```js
+{  function caseInSwitch(val) {
+  var answer = "";
+  switch(val) {
+  case 1:
+    return "alpha";
+    break;
+  case 2:
+    return "beta";
+    break;
+  case 3:
+    return "gamma";
+    break;
+     case 4:
+   return "delta";
+    break;
+}
+
+  return answer;
+}
+
+caseInSwitch(1);
+caseInSwitch(2);
+caseInSwitch(3);
+caseInSwitch(4);
+}
+```
+
+## Multiple Identical Options in Switch Statements
+```js
+{
+}
+```
+
+## Replacing If Else Chains with Switch
+```js
+{
+}
+```
+
+## Returning Boolean Values from Functions
+```js
+{
+}
+```
+
+## Return Early Pattern for Functions
+```js
+{
+}
+```
+
+## Counting Cards
+```js
+{
+}
+```
+
+## Build JavaScript Objects
+```js
 {  // completed example
   function f(param_1, param_2, param_3) {
     var result = param_2 + param_3 + param_1;
@@ -56,12 +115,6 @@ My JavaScript Exercise part 1 is [here](https://github.com/AlfiYusrina/hyf-javas
 }
 ```
 
-## Multiple Identical Options in Switch Statements
-## Replacing If Else Chains with Switch
-## Returning Boolean Values from Functions
-## Return Early Pattern for Functions
-## Counting Cards
-## Build JavaScript Objects
 ## Accessing Object Properties with Dot Notation
 ## Accessing Object Properties with Bracket Notation
 ## Accessing Object Properties with Variables
