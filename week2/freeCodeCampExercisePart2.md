@@ -4,6 +4,7 @@
 My JavaScript Exercise part 1 is [here](https://github.com/AlfiYusrina/hyf-javascript1/blob/master/week1/freecode_camp_solutions.MD).
 
 ### Index
+1. [Selecting from Many Options with Switch Statements](#Selecting-from-Many-Options-with-Switch-Statements)
 1. [Adding a Default Option in Switch Statements](#adding-a-default-option-in-switch-statements)
 1. [Multiple Identical Options in Switch Statements](#multiple-identical-options-in-switch-statements)
 1. [Replacing If Else Chains with Switch](#replacing-if-else-chains-with-switch)
@@ -40,9 +41,9 @@ My JavaScript Exercise part 1 is [here](https://github.com/AlfiYusrina/hyf-javas
 1. [Use Multiple Conditional (Ternary) Operators](#Use-Multiple-Conditional-Ternary-Operators)
 
 ### Exercise
-## Adding a Default Option in Switch Statements
+## Selecting from Many Options with Switch Statements
 ```js
-{  function caseInSwitch(val) {
+function caseInSwitch(val) {
   var answer = "";
   switch(val) {
   case 1:
@@ -66,19 +67,90 @@ caseInSwitch(1);
 caseInSwitch(2);
 caseInSwitch(3);
 caseInSwitch(4);
+```
+
+## Adding a Default Option in Switch Statements
+```js
+function switchOfStuff(val) {
+  var answer = "";
+    switch(val) {
+  case "a":
+    answer = "apple";
+    break;
+  case "b":
+    answer = "bird";
+    break;
+  case "c":
+    answer = "cat";
+    break;
+  default:
+   answer = "stuff";
 }
+
+  return answer;
+}
+
+switchOfStuff(1);
 ```
 
 ## Multiple Identical Options in Switch Statements
 ```js
-{
+function sequentialSizes(val) {
+  var answer = "";
+  switch(val) {
+  case 1:
+  case 2:
+  case 3:
+    answer = "Low";
+    break;
+  case 4:
+  case 5:
+  case 6:
+    answer = "Mid";
+    break;
+  case 7:
+  case 8:
+  case 9:
+    answer = "High";
 }
+  return answer;
+}
+
+sequentialSizes(1);
+
 ```
 
 ## Replacing If Else Chains with Switch
 ```js
-{
+function chainToSwitch(val) {
+  var answer = "";
+
+  switch(val) {
+  case "bob":
+    answer = "Marley";
+    break;
+  case 42:
+    answer = "The Answer";
+    break;
+  case 1:
+    answer = "There is no #1";
+    break;
+  case 99:
+    answer = "Missed me by this much!";
+    break;
+  case 7:
+    answer = "Ate Nine";
+    break;
+  default:
+    answer = "";
+    break;
 }
+
+  return answer;
+}
+
+chainToSwitch(7);
+
 ```
 
 ## Returning Boolean Values from Functions
