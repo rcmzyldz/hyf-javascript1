@@ -1,7 +1,7 @@
 
 # [freeCodeCamp](https://www.freecodecamp.org/) Javascript Exercise Part 2
 
-My JavaScript part 1 is [here](https://github.com/AlfiYusrina/hyf-javascript1/blob/master/week1/freecode_camp_solutions.MD).
+My JavaScript Exercise part 1 is [here](https://github.com/AlfiYusrina/hyf-javascript1/blob/master/week1/freecode_camp_solutions.MD).
 
 ### Index
 1. [Adding a Default Option in Switch Statements](#adding-a-default-option-in-switch-statements)
@@ -40,9 +40,9 @@ My JavaScript part 1 is [here](https://github.com/AlfiYusrina/hyf-javascript1/bl
 1. [Use Multiple Conditional (Ternary) Operators]()
 
 ### Exercise
-## 1. Adding a Default Option in Switch Statements
-## 1. Multiple Identical Options in Switch Statements
-## 1. Replacing If Else Chains with Switch
+1. ## Adding a Default Option in Switch Statements
+1. ## Multiple Identical Options in Switch Statements
+1. ## Replacing If Else Chains with Switch
 ## 1. Returning Boolean Values from Functions
 1. Return Early Pattern for Functions
 1. Counting Cards
