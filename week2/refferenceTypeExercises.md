@@ -133,26 +133,26 @@ arr = _;
 
 __Complete this code__
 [(read this first)](https://github.com/janke-learning/reference-vs-value)
-[on pytut](http://www.pythontutor.com/javascript.html#code=%20%20let%20value_1%20%3D%205%3B%0A%20%20let%20reference_1%20%3D%20%5B%5D%3B%0A%0A%20%20let%20value_2%20%3D%20value_1%3B%0A%20%20console.assert%28value_2%20/*%20%3D%3D%3D%20or%20!%3D%3D%20%3F%20*/%20value_1%29%3B%0A%0A%20%20let%20reference_2%20%3D%20reference_1%3B%0A%20%20console.assert%28reference_2%20/*%20%3D%3D%3D%20or%20!%3D%3D%20%3F%20*/%20reference_1%29%3B%0A%0A%20%20%20%20%20%20%3B%20//%20write%20this%20line%0A%20%20console.assert%28value_1%20!%3D%3D%20value_2%29%3B%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%3B%20//%20write%20this%20line%0A%20%20console.assert%28reference_1%5B0%5D%20%3D%3D%3D%20reference_2%5B0%5D%29%3B%0A%0A%20%20//%20remove%20the%20array%20from%20memory%0A%20%20%20%20%20%20%3B%20//%20write%20this%20line%0A%20%20%20%20%20%20%3B%20//%20write%20this%20line&mode=edit&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+[on pytut](http://www.pythontutor.com/javascript.html#code=%20%20let%20value_1%20%3D%205%3B%0A%20%20let%20reference_1%20%3D%20%5B%5D%3B%0A%0A%20%20let%20value_2%20%3D%20value_1%3B%0A%20%20console.assert%28value_2%20%3D%3D%3D%20value_1%29%3B%0A%0A%20%20let%20reference_2%20%3D%20reference_1%3B%0A%20%20console.assert%28reference_2%20%3D%3D%3D%20reference_1%29%3B%0A%0A%20%20value_2%2B%2B%3B%20//%20write%20this%20line%0A%20%20console.assert%28value_1%20!%3D%3D%20value_2%29%3B%20%20%0A%20%20%20%20%0A%20%20reference_2.push%28value_2%29%3B%20//%20write%20this%20line%0A%20%20console.assert%28reference_1%5B0%5D%20%3D%3D%3D%20reference_2%5B0%5D%29%3B%0A%0A%20%20//%20remove%20the%20array%20from%20memory%0Areference_1%20%3D%20null%3B%0Areference_2%20%3D%20null%3B&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
 let value_1 = 5;
 let reference_1 = [];
 
 let value_2 = value_1;
-console.assert(value_2 /* === or !== ? */ value_1);
+console.assert(value_2 === value_1);
 
 let reference_2 = reference_1;
-console.assert(reference_2 /* === or !== ? */ reference_1);
+console.assert(reference_2 === reference_1);
 
-    ; // write this line
+value_2++; // write this line
 console.assert(value_1 !== value_2);
 
-    ; // write this line
+reference_2.push(value_2); // write this line
 console.assert(reference_1[0] === reference_2[0]);
 
 // remove the array from memory
-    ; // write this line
-    ; // write this line
+reference_1 = null;
+reference_2 = null;
 ```
 
 [TOP](#reference-type-exercises)
