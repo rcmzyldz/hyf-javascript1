@@ -187,88 +187,79 @@ learning objectives
 
 
 [parsonized](https://janke-learning.github.io/parsonizer/?snippet=typeof%20a%20%3D%3D%3D%20typeof%20b%0Atypeof%20a%0Atypeof%20b%0A_%20%3D%3D%3D%20_)
-[on pytut](http://www.pythontutor.com/live.html#code=/*%20values%20to%20try%0A%20%20%22%22,%20%22%20%22,%20true,%20false,%20undefined,%20null,%200,%201,%20-1,%20NaN,%20Infinity%0A*/%0Aconst%20a%20%3D%20,%20b%20%3D%20%3B%0A%0Aconst%20expected%20%3D%20typeof%20a%20%3D%3D%3D%20typeof%20b%3B%0A%0Aconst%20val_1%20%3D%20%3B%0Aconst%20step_1%20%3D%20%3B%0Aconsole.assert%28step_1%20%3D%3D%3D%20expected,%20%22step_1%22%29%3B%0A%0Aconst%20val_2%20%3D%20%3B%0Aconst%20step_2%20%3D%20%3B%0Aconsole.assert%28step_2%20%3D%3D%3D%20expected,%20%22step_2%22%29%3B%0A%0Aconst%20val_3%20%3D%20%3B%0Aconst%20step_3%20%3D%20%3B%0Aconsole.assert%28step_3%20%3D%3D%3D%20expected,%20%22step_3%22%29%3B&cumulative=false&curInstr=10&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
+[on pytut](http://www.pythontutor.com/live.html#code=/*%20values%20to%20try%0A%20%20%22%22,%20%22%20%22,%20true,%20false,%20undefined,%20null,%200,%201,%20-1,%20NaN,%20Infinity%0A*/%0Aconst%20a%20%3D%20%22%22,%20b%20%3D%20%22%22%3B%0A%0Aconst%20expected%20%3D%20typeof%20a%20%3D%3D%3D%20typeof%20b%3B%0A%0Aconst%20val_1%20%3D%20%22%22%3B%0Aconst%20step_1%20%3D%20true%3B%0Aconsole.assert%28step_1%20%3D%3D%3D%20expected,%20%22step_1%22%29%3B%0A%0Aconst%20val_2%20%3D%20%22%22%3B%0Aconst%20step_2%20%3D%20true%3B%0Aconsole.assert%28step_2%20%3D%3D%3D%20expected,%20%22step_2%22%29%3B%0A%0Aconst%20val_3%20%3D%20%22%22%3B%0Aconst%20step_3%20%3D%20true%3B%0Aconsole.assert%28step_3%20%3D%3D%3D%20expected,%20%22step_3%22%29%3B&cumulative=false&curInstr=11&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
 ```js
-{
-  /* values to try
-    "", " ", true, false, undefined, null, 0, 1, -1, NaN, Infinity
-  */
-  const a = , b = ;
+const a = "", b = "";
 
-  const expected = typeof a === typeof b;
+const expected = typeof a === typeof b;
 
-  const val_1 = ;
-  const step_1 = ;
-  console.assert(step_1 === expected, "step_1");
+const val_1 = "";
+const step_1 = true;
+console.assert(step_1 === expected, "step_1");
 
-  const val_2 = ;
-  const step_2 = ;
-  console.assert(step_2 === expected, "step_2");
+const val_2 = "";
+const step_2 = true;
+console.assert(step_2 === expected, "step_2");
 
-  const val_3 = ;
-  const step_3 = ;
-  console.assert(step_3 === expected, "step_3");
-}
+const val_3 = "";
+const step_3 = true;
+console.assert(step_3 === expected, "step_3");
 ```
 
 ### types & casting 2
 
 
 [parsonized](https://janke-learning.github.io/parsonizer/?snippet=Boolean%28a%29%20!%3D%3D%20Boolean%28b%29%0ABoolean%28a%29%0ABoolean%28b%29%0A_%20!%3D%3D%20_)
-[on pytut](http://www.pythontutor.com/live.html#code=/*%20values%20to%20try%0A%20%20%22%22,%20%22%20%22,%20true,%20false,%20undefined,%20null,%200,%201,%20-1,%20NaN,%20Infinity%0A*/%0Aconst%20a%20%3D%20,%20b%20%3D%20%3B%0A%0Aconst%20expected%20%3D%20Boolean%28a%29%20!%3D%3D%20Boolean%28b%29%3B%0A%0Aconst%20val_1%20%3D%20%3B%0Aconst%20step_1%20%3D%20%3B%0Aconsole.assert%28step_1%20%3D%3D%3D%20expected,%20%22step_1%22%29%3B%0A%0Aconst%20val_2%20%3D%20%3B%0Aconst%20step_2%20%3D%20%3B%0Aconsole.assert%28step_2%20%3D%3D%3D%20expected,%20%22step_2%22%29%3B%0A%0Aconst%20val_3%20%3D%20%3B%0Aconst%20step_3%20%3D%20%3B%0Aconsole.assert%28step_3%20%3D%3D%3D%20expected,%20%22step_3%22%29%3B%20&cumulative=false&curInstr=10&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
+[on pytut](http://www.pythontutor.com/live.html#code=/*%20values%20to%20try%0A%20%20%22%22,%20%22%20%22,%20true,%20false,%20undefined,%20null,%200,%201,%20-1,%20NaN,%20Infinity%0A*/%0Aconst%20a%20%3D%20true,%20b%20%3D%20false%3B%0A%0Aconst%20expected%20%3D%20Boolean%28a%29%20!%3D%3D%20Boolean%28b%29%3B%0A%0Aconst%20val_1%20%3D%20true%3B%0Aconst%20step_1%20%3D%20true%3B%0Aconsole.assert%28step_1%20%3D%3D%3D%20expected,%20%22step_1%22%29%3B%0A%0Aconst%20val_2%20%3D%20false%3B%0Aconst%20step_2%20%3D%20true%3B%0Aconsole.assert%28step_2%20%3D%3D%3D%20expected,%20%22step_2%22%29%3B%0A%0Aconst%20val_3%20%3D%20true%3B%0Aconst%20step_3%20%3D%20true%3B%0Aconsole.assert%28step_3%20%3D%3D%3D%20expected,%20%22step_3%22%29%3B&cumulative=false&curInstr=6&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
 ```js
-{
-  /* values to try
-    "", " ", true, false, undefined, null, 0, 1, -1, NaN, Infinity
-  */
-  const a = , b = ;
+/* values to try
+  "", " ", true, false, undefined, null, 0, 1, -1, NaN, Infinity
+*/
+const a = true, b = false;
 
-  const expected = Boolean(a) !== Boolean(b);
+const expected = Boolean(a) !== Boolean(b);
 
-  const val_1 = ;
-  const step_1 = ;
-  console.assert(step_1 === expected, "step_1");
+const val_1 = true;
+const step_1 = true;
+console.assert(step_1 === expected, "step_1");
 
-  const val_2 = ;
-  const step_2 = ;
-  console.assert(step_2 === expected, "step_2");
+const val_2 = false;
+const step_2 = true;
+console.assert(step_2 === expected, "step_2");
 
-  const val_3 = ;
-  const step_3 = ;
-  console.assert(step_3 === expected, "step_3");
-}
+const val_3 = true;
+const step_3 = true;
+console.assert(step_3 === expected, "step_3");
 ```
 
 ## types & casting 3
 
 
 [parsonized](https://janke-learning.github.io/parsonizer/?snippet=Boolean%28b%29%20%3D%3D%3D%20Boolean%28Number%28a%29%29%0ABoolean%28b%29%0ANumber%28a%29%0ABoolean%28_%29%0A_%20%3D%3D%3D%20_)
-[on pytut](http://www.pythontutor.com/live.html#code=/*%20values%20to%20try%0A%20%20%22%22,%20%22%20%22,%20true,%20false,%20undefined,%20null,%200,%201,%20-1,%20NaN,%20Infinity%0A*/%0Aconst%20a%20%3D%20,%20b%20%3D%20%3B%0A%0Aconst%20expected%20%3D%20Boolean%28b%29%20%3D%3D%3D%20Boolean%28Number%28a%29%29%3B%0A%0Aconst%20val_1%20%3D%20%3B%0Aconst%20step_1%20%3D%20%3B%0Aconsole.assert%28step_1%20%3D%3D%3D%20expected,%20%22step_1%22%29%3B%0A%0Aconst%20val_2%20%3D%20%3B%0Aconst%20step_2%20%3D%20%3B%0Aconsole.assert%28step_2%20%3D%3D%3D%20expected,%20%22step_2%22%29%3B%0A%0Aconst%20val_3%20%3D%20%3B%0Aconst%20step_3%20%3D%20%3B%0Aconsole.assert%28step_3%20%3D%3D%3D%20expected,%20%22step_3%22%29%3B%0A%0Aconst%20val_4%20%3D%20%3B%0Aconst%20step_4%20%3D%20%3B%0Aconsole.assert%28step_4%20%3D%3D%3D%20expected,%20%22step_4%22%29%3B&cumulative=false&curInstr=10&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
+[on pytut](http://www.pythontutor.com/live.html#code=/*%20values%20to%20try%0A%20%20%22%22,%20%22%20%22,%20true,%20false,%20undefined,%20null,%200,%201,%20-1,%20NaN,%20Infinity%0A*/%0Aconst%20a%20%3D%20true,%20b%20%3D%20true%3B%0A%0Aconst%20expected%20%3D%20Boolean%28b%29%20%3D%3D%3D%20Boolean%28Number%28a%29%29%3B%0A%0Aconst%20val_1%20%3D%20true%3B%0Aconst%20step_1%20%3D%20true%3B%0Aconsole.assert%28step_1%20%3D%3D%3D%20expected,%20%22step_1%22%29%3B%0A%0Aconst%20val_2%20%3D%20true%3B%0Aconst%20step_2%20%3D%20true%3B%0Aconsole.assert%28step_2%20%3D%3D%3D%20expected,%20%22step_2%22%29%3B%0A%0Aconst%20val_3%20%3D%20true%3B%0Aconst%20step_3%20%3D%20true%3B%0Aconsole.assert%28step_3%20%3D%3D%3D%20expected,%20%22step_3%22%29%3B%0A%0Aconst%20val_4%20%3D%20true%3B%0Aconst%20step_4%20%3D%20true%3B%0Aconsole.assert%28step_4%20%3D%3D%3D%20expected,%20%22step_4%22%29%3B&cumulative=false&curInstr=14&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
 ```js
-{
-  /* values to try
-    "", " ", true, false, undefined, null, 0, 1, -1, NaN, Infinity
-  */
-  const a = , b = ;
+/* values to try
+  "", " ", true, false, undefined, null, 0, 1, -1, NaN, Infinity
+*/
+const a = true, b = true;
 
-  const expected = Boolean(b) === Boolean(Number(a));
+const expected = Boolean(b) === Boolean(Number(a));
 
-  const val_1 = ;
-  const step_1 = ;
-  console.assert(step_1 === expected, "step_1");
+const val_1 = true;
+const step_1 = true;
+console.assert(step_1 === expected, "step_1");
 
-  const val_2 = ;
-  const step_2 = ;
-  console.assert(step_2 === expected, "step_2");
+const val_2 = true;
+const step_2 = true;
+console.assert(step_2 === expected, "step_2");
 
-  const val_3 = ;
-  const step_3 = ;
-  console.assert(step_3 === expected, "step_3");
+const val_3 = true;
+const step_3 = true;
+console.assert(step_3 === expected, "step_3");
 
-  const val_4 = ;
-  const step_4 = ;
-  console.assert(step_4 === expected, "step_4");
-}
+const val_4 = true;
+const step_4 = true;
+console.assert(step_4 === expected, "step_4");
 ```
 
 [TOP](#operator-precedence)
