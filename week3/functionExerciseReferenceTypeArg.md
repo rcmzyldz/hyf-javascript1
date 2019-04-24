@@ -175,11 +175,14 @@ not the best choice, it can be much more difficult to think about and debug.
 
 ### copy an array
 
-[on pytut](http://www.pythontutor.com/live.html#code=function%20copy_array%28arr%29%20%7B%0A%20%20//%20write%20this%20using%20JSON.stringify%20%26%20.parse%0A%7D%0A%0Aconst%20array%20%3D%20%5B'a',%20'b'%5D%3B%0Aconst%20by_copy%20%3D%20copy_array%28array%29%3B%0A%0Aconsole.assert%28array%5B0%5D%20%3D%3D%3D%20by_copy%5B0%5D%29%3B%0Aconsole.assert%28array%5B1%5D%20%3D%3D%3D%20by_copy%5B1%5D%29%3B%0Aconsole.assert%28array%20!%3D%3D%20by_copy%29%3B&cumulative=false&curInstr=4&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
+[on pytut](http://www.pythontutor.com/live.html#code=function%20copy_array%28arr%29%20%7B%0A%20%20//%20write%20this%20using%20JSON.stringify%20%26%20.parse%0A%20var%20array_strified%20%3D%20JSON.stringify%28arr%29%3B%0A%20var%20array_copy%20%3D%20JSON.parse%28array_strified%29%3B%0A%20return%20array_copy%3B%0A%7D%0A%0Aconst%20array%20%3D%20%5B'a',%20'b'%5D%3B%0Aconst%20by_copy%20%3D%20copy_array%28array%29%3B%0A%0Aconsole.assert%28array%5B0%5D%20%3D%3D%3D%20by_copy%5B0%5D%29%3B%0Aconsole.assert%28array%5B1%5D%20%3D%3D%3D%20by_copy%5B1%5D%29%3B%0Aconsole.assert%28array%20!%3D%3D%20by_copy%29%3B&cumulative=false&curInstr=7&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
 ```js
 {
   function copy_array(arr) {
     // write this using JSON.stringify & .parse
+    var array_strified = JSON.stringify(arr);
+    var array_copy = JSON.parse(array_strified);
+    return array_copy;
   }
 
   const array = ['a', 'b'];
@@ -194,13 +197,18 @@ not the best choice, it can be much more difficult to think about and debug.
 
 ### start a new array
 
-[on pytut](http://www.pythontutor.com/live.html#code=function%20start_new_array%28arr%29%20%7B%0A%20%20//%20write%20this%20by%20building%20a%20new%20array%20from%20scratch%0A%7D%0A%0Aconst%20array%20%3D%20%5B'a',%20'b'%5D%3B%0Aconst%20by_new_start%20%3D%20start_new_array%28array%29%3B%0A%0Aconsole.assert%28array%5B0%5D%20%3D%3D%3D%20by_new_start%5B0%5D%29%3B%0Aconsole.assert%28array%5B1%5D%20%3D%3D%3D%20by_new_start%5B1%5D%29%3B%0Aconsole.assert%28array%20!%3D%3D%20by_new_start%29%3B&cumulative=false&curInstr=4&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
+[on pytut](http://www.pythontutor.com/live.html#code=function%20start_new_array%28arr%29%20%7B%0A%20%20//%20write%20this%20by%20building%20a%20new%20array%20from%20scratch%0Avar%20new_arr%20%3D%20%5B%5D%3B%0Afor%28var%20i%20%3D0%3B%20i%20%3C%3D%20arr.length-1%3B%20i%2B%2B%29%7B%0A%20%20new_arr.push%28arr%5Bi%5D%29%3B%0A%20%20%0A%7D%0Areturn%20new_arr%3B%0A%7D%0A%0Aconst%20array%20%3D%20%5B'a',%20'b'%5D%3B%0Aconst%20by_new_start%20%3D%20start_new_array%28array%29%3B%0A%0Aconsole.assert%28array%5B0%5D%20%3D%3D%3D%20by_new_start%5B0%5D%29%3B%0Aconsole.assert%28array%5B1%5D%20%3D%3D%3D%20by_new_start%5B1%5D%29%3B%0Aconsole.assert%28array%20!%3D%3D%20by_new_start%29%3B&cumulative=false&curInstr=11&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
 ```js
 {
   function start_new_array(arr) {
     // write this by building a new array from scratch
     // the paramenter should only be used on the right side of =
     // the new one should only be used on the left side of =
+    var new_arr = [];
+    for(var i =0; i <= arr.length-1; i++){
+      new_arr.push(arr[i]);
+    }
+    return new_arr;
   }
 
   const array = ['a', 'b'];
@@ -214,11 +222,14 @@ not the best choice, it can be much more difficult to think about and debug.
 
 ### copy an object
 
-[on pytut](http://www.pythontutor.com/live.html#code=function%20copy_object%28obj%29%20%7B%0A%20%20//%20write%20this%20using%20JSON.stringify%20%26%20.parse%0A%7D%0A%0Aconst%20object%20%3D%20%7Ba%3A%201,%20b%3A%202%7D%3B%0Aconst%20by_copy%20%3D%20copy_object%28object%29%3B%0A%0Aconsole.assert%28object.a%20%3D%3D%3D%20by_copy.a%29%3B%0Aconsole.assert%28object%5B'b'%5D%20%3D%3D%3D%20by_copy%5B'b'%5D%29%3B%0Aconsole.assert%28object%20!%3D%3D%20by_copy%29%3B&cumulative=false&curInstr=4&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
+[on pytut](http://www.pythontutor.com/live.html#code=function%20copy_object%28obj%29%20%7B%0A%20%20//%20write%20this%20using%20JSON.stringify%20%26%20.parse%0A%20%20%20%20var%20obj_strified%20%3D%20JSON.stringify%28obj%29%3B%0A%20%20%20%20var%20obj_copy%20%3D%20JSON.parse%28obj_strified%29%3B%0A%20%20%20%20return%20obj_copy%3B%0A%7D%0A%0Aconst%20object%20%3D%20%7Ba%3A%201,%20b%3A%202%7D%3B%0Aconst%20by_copy%20%3D%20copy_object%28object%29%3B%0A%0Aconsole.assert%28object.a%20%3D%3D%3D%20by_copy.a%29%3B%0Aconsole.assert%28object%5B'b'%5D%20%3D%3D%3D%20by_copy%5B'b'%5D%29%3B%0Aconsole.assert%28object%20!%3D%3D%20by_copy%29%3B&cumulative=false&curInstr=9&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
 ```js
 {
   function copy_object(obj) {
     // write this using JSON.stringify & .parse
+    var obj_strified = JSON.stringify(obj);
+    var obj_copy = JSON.parse(obj_strified);
+    return obj_copy;
   }
 
   const object = {a: 1, b: 2};
@@ -233,13 +244,18 @@ not the best choice, it can be much more difficult to think about and debug.
 
 ### start a new object
 
-[on pytut](http://www.pythontutor.com/live.html#code=function%20start_new_object%28obj%29%20%7B%0A%20%20//%20write%20this%20by%20building%20a%20new%20object%20from%20scratch%0A%7D%0A%0Aconst%20object%20%3D%20%7Ba%3A%201,%20b%3A%202%7D%3B%0Aconst%20by_new_start%20%3D%20start_new_object%28object%29%3B%0A%0Aconsole.assert%28object.a%20%3D%3D%3D%20by_new_start.a%29%3B%0Aconsole.assert%28object%5B'b'%5D%20%3D%3D%3D%20by_new_start%5B'b'%5D%29%3B%0Aconsole.assert%28object%20!%3D%3D%20by_new_start%29%3B&cumulative=false&curInstr=4&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
+[on pytut](http://www.pythontutor.com/live.html#code=function%20start_new_object%28obj%29%20%7B%0A%20%20//%20write%20this%20by%20building%20a%20new%20object%20from%20scratch%0Avar%20new_obj%20%3D%20%7B%7D%3B%0A%20%20%20%20for%28let%20key%20in%20obj%29%7B%0A%20%20%20%20%20%20new_obj%5Bkey%5D%20%3D%20obj%5Bkey%5D%3B%0A%20%20%20%20%7D%0A%20%20%20%20return%20new_obj%3B%0A%0A%7D%0A%0Aconst%20object%20%3D%20%7Ba%3A%201,%20b%3A%202%7D%3B%0Aconst%20by_new_start%20%3D%20start_new_object%28object%29%3B%0A%0Aconsole.assert%28object.a%20%3D%3D%3D%20by_new_start.a%29%3B%0Aconsole.assert%28object%5B'b'%5D%20%3D%3D%3D%20by_new_start%5B'b'%5D%29%3B%0Aconsole.assert%28object%20!%3D%3D%20by_new_start%29%3B&cumulative=false&curInstr=14&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
 ```js
 {
   function start_new_object(obj) {
     // write this by building a new object from scratch
     // the paramenter should only be used on the right side of =
     // the new one should only be used on the left side of =
+    var new_obj = {};
+    for(let key in obj){
+      new_obj[key] = obj[key];
+    }
+    return new_obj;
   }
 
   const object = {a: 1, b: 2};
