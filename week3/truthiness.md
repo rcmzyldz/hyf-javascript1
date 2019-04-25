@@ -17,22 +17,22 @@ Paste this in the console to learn about truthiness, or study it [on python tuto
 ```
 values to try:
 ```js
-a: true       --> ?
-a: false      --> ?
-a: 0          --> ?
-a: 1           --> ?
-a: null       --> ?
-a: undefined  --> ?
-a: ''         --> ?
-a: ' '        --> ?
-a: 'tiil'     --> ?
-a: 2          --> ?
-a: 345        --> ?
-a: NaN        --> ?
-a: Infinity   --> ?
-a: -Infinity  --> ?
-a: -3         --> ?
-a: -0.0       --> ?
+a: true       --> true
+a: false      --> false
+a: 0          --> false
+a: 1           --> true
+a: null       --> false
+a: undefined  --> false
+a: ''         --> false
+a: ' '        --> true
+a: 'tiil'     --> true
+a: 2          --> true
+a: 345        --> true
+a: NaN        --> false
+a: Infinity   --> true
+a: -Infinity  --> true
+a: -3         --> _true_
+a: -0.0       --> false
 ```
 
 This repo covers 4 important operators who's behavior is dependant on the _truthiness_ of their arguments.
@@ -66,22 +66,22 @@ JavaScript has only 6 falsey primitive values.  All other values are truthy.
 ```
 the values:
 ```js
-1: false      --> ?
+1: false      --> false
 
-2: null       --> ?
+2: null       --> false
 
-3: undefined  --> ?
+3: undefined  --> false
 
-4: ''         --> ?
-4: ""         --> ?
-4: ``         --> ?
+4: ''         --> false
+4: ""         --> false
+4: ``         --> false
 
-5: NaN        --> ?
+5: NaN        --> false
 
-6: 0          --> ?
-6: 0.0        --> ?
-6: +0         --> ?
-6: -0         --> ?
+6: 0          --> false
+6: 0.0        --> false
+6: +0         --> false
+6: -0         --> false
 ```
 
 
@@ -119,22 +119,22 @@ Ternary operators can only have two options.
 
 values to try:
 ```js
-a: true       --> ?
-a: false      --> ?
-a: 0          --> ?
-a: 1          --> ?
-a: null       --> ?
-a: undefined  --> ?
-a: ''         --> ?
-a: ' '        --> ?
-a: 'tiil'     --> ?
-a: 2          --> ?
-a: 345        --> ?
-a: NaN        --> ?
-a: Infinity   --> ?
-a: -Infinity  --> ?
-a: -3         --> ?
-a: -0.0       --> ?
+a: true       --> 1
+a: false      --> 2
+a: 0          --> 2
+a: 1          --> 1
+a: null       --> 2
+a: undefined  --> 2
+a: ''         --> 2
+a: ' '        --> 1
+a: 'tiil'     --> 1
+a: 2          --> 1
+a: 345        --> 1
+a: NaN        --> 2
+a: Infinity   --> 1
+a: -Infinity  --> 1
+a: -3         --> 1
+a: -0.0       --> 2
 ```
 
 
@@ -166,16 +166,16 @@ Paste this in the console to learn about &&:
 ```
 values to try:
 ```js
-a: true, b:false      --> ?
-a: false, b:true      --> ?
-a: 0, b:1             --> ?
-a: 1, b:0             --> ?
-a: null, b:false      --> ?
-a: false, b:null      --> ?
-a: '', b:' '          --> ?
-a: ' ', b:''          --> ?
-a: 2, b:3             --> ?
-a: 3, b:2             --> ?
+a: true, b:false      --> false
+a: false, b:true      --> false
+a: 0, b:1             --> 0
+a: 1, b:0             --> 0
+a: null, b:false      --> null
+a: false, b:null      --> false
+a: '', b:' '          --> ''
+a: ' ', b:''          --> ' '
+a: 2, b:3             --> 3
+a: 3, b:2             --> 2
 ```
 
 [TOP](#truthiness)
@@ -206,16 +206,16 @@ Paste this in the console to learn about ||:
 ```
 values to try:
 ```js
-a: true, b:false      --> ?
-a: false, b:true      --> ?
-a: 0, b:1             --> ?
-a: 1, b:0             --> ?
-a: null, b:false      --> ?
-a: false, b:null      --> ?
-a: '', b:' '          --> ?
-a: ' ', b:''          --> ?
-a: 2, b:3             --> ?
-a: 3, b:2             --> ?
+a: true, b:false      --> true
+a: false, b:true      --> true
+a: 0, b:1             --> 1
+a: 1, b:0             --> 1
+a: null, b:false      --> false
+a: false, b:null      --> null
+a: '', b:' '          --> ' '
+a: ' ', b:''          --> ' '
+a: 2, b:3             --> 2
+a: 3, b:2             --> 3
 ```
 
 [TOP](#truthiness)
@@ -245,22 +245,22 @@ Paste this in the console to learn about !:
 ```
 values to try:
 ```js
-a: true       --> ?
-a: false      --> ?
-a: 0          --> ?
-a: 1          --> ?
-a: null       --> ?
-a: undefined  --> ?
-a: ''         --> ?
-a: ' '        --> ?
-a: 'tiil'     --> ?
-a: 2          --> ?
-a: 345        --> ?
-a: NaN        --> ?
-a: Infinity   --> ?
-a: -Infinity  --> ?
-a: -3         --> ?
-a: -0.0       --> ?
+a: true       --> false
+a: false      --> true
+a: 0          --> true
+a: 1          --> false
+a: null       --> true
+a: undefined  --> true
+a: ''         --> true
+a: ' '        --> false
+a: 'tiil'     --> false
+a: 2          --> false
+a: 345        --> false
+a: NaN        --> true
+a: Infinity   --> false
+a: -Infinity  --> false
+a: -3         --> false
+a: -0.0       --> true
 ```
 
 [TOP](#truthiness)
