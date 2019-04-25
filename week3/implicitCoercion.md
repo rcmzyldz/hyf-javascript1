@@ -48,22 +48,22 @@ function plus(x, y) {
 
 ### a plus b
 
-[on pytut](http://www.pythontutor.com/live.html#code=/*%20test%20cases%20%20%20%20%20%20%20%20%20%20%3A%20fill%20in%20the%20correct%20results%0A%20%20%223%22,%203,%203%20%20%20%20%20%20%20%20%20%20%20-%3E%20%3F%0A%20%203,%20%223%22,%203%20%20%20%20%20%20%20%20%20%20%20-%3E%20%3F%0A%20%203,%203,%20%223%22%20%20%20%20%20%20%20%20%20%20%20-%3E%20%3F%0A%20%20%22%22,%20true,%20false%20%20%20%20%20-%3E%20%3F%0A%20%20true,%20false,%20%22%22%20%20%20%20%20-%3E%20%3F%0A%20%20null,%200,%20%22%22%20%20%20%20%20%20%20%20%20-%3E%20%3F%0A%20%20%22%22,%200,%20null%20%20%20%20%20%20%20%20%20-%3E%20%3F%0A%20%20undefined,%200,%20true%20%20-%3E%20%3F%0A*/%0Aconst%20a%20%3D%20,%20b%20%3D%20,%20c%20%3D%20%3B%0Aconst%20typeof_a%20%3D%20typeof%20a%3B%0Aconst%20typeof_b%20%3D%20typeof%20b%3B%0Aconst%20typeof_c%20%3D%20typeof%20c%3B%0A%0Aconst%20native_plus%20%3D%20a%20%2B%20%28b%20%2B%20c%29%3B%20//%20right%20to%20left%0Aconst%20replication%20%3D%20plus%28%20a,%20plus%28b,%20c%29%29%3B%0A%0Aconsole.assert%28native_plus%20%3D%3D%3D%20replication,%20replication%29%3B%0A%0Afunction%20plus%28x,%20y%29%20%7B%0A%20%20%0A%20%20if%20%28typeof%20x%20%3D%3D%3D%20%22string%22%20%7C%7C%20typeof%20y%20%3D%3D%3D%20%22string%22%29%20%7B%0A%20%20%20%20var%20x_coerced%20%3D%20String%28x%29%3B%0A%20%20%20%20var%20y_coerced%20%3D%20String%28y%29%3B%0A%20%20%7D%20else%20%7B%0A%20%20%20%20var%20x_coerced%20%3D%20Number%28x%29%3B%0A%20%20%20%20var%20y_coerced%20%3D%20Number%28y%29%3B%0A%20%20%7D%3B%0A%0A%20%20return%20x_coerced%20%2B%20y_coerced%3B%0A%7D&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
+[on pytut](http://www.pythontutor.com/live.html#code=/*%20test%20cases%20%20%20%20%20%20%3A%20fill%20in%20the%20correct%20results%0A%20%20%20%20null,%20undefined%20-%3E%20NaN%0A%20%20%20%20%223%22,%203%20%20%20%20%20%20%20%20%20%20-%3E%20%2233%22%0A%20%20%20%203,%20%223%22%20%20%20%20%20%20%20%20%20%20-%3E%20%2233%22%0A%20%20%20%20%223%22,%20%22e%22%20%20%20%20%20%20%20%20-%3E%20%223e%22%0A%20%20%20%203,%20%22e%22%20%20%20%20%20%20%20%20%20%20-%3E%20%223e%22%0A%20%20%20%20%22%22,%200%20%20%20%20%20%20%20%20%20%20%20-%3E%20%220%22%0A%20%20%20%20undefined,%204%20%20%20%20-%3E%20NaN%0A%20%20%20%20true,%20false%20%20%20%20%20-%3E%200%0A%20%20%20%20true,%20%22false%22%20%20%20-%3E%20%22truefalse%22%0A%20%20%20%20null,%20false%20%20%20%20%20-%3E%200%0A%20%20%20%201,%20null%20%20%20%20%20%20%20%20%20-%3E%201%0A%20%20%20%20null,%20%22%22%20%20%20%20%20%20%20%20-%3E%20%22null%22%0A%20%20*/%0A%0A%20%20const%20a%20%3D%20%20%220%22,%20b%20%3D%200%3B%0A%20%20const%20typeof_a%20%3D%20typeof%20a%3B%0A%20%20const%20typeof_b%20%3D%20typeof%20b%3B%0A%0A%20%20const%20native_plus%20%3D%20a%20%2B%20b%3B%0A%20%20const%20replication%20%3D%20plus%28a,%20b%29%3B%0A%0A%20%20console.assert%28native_plus%20%3D%3D%3D%20replication,%20replication%29%3B%0Afunction%20plus%28x,%20y%29%20%7B%0A%20%20%0A%20%20if%20%28typeof%20x%20%3D%3D%3D%20%22string%22%20%7C%7C%20typeof%20y%20%3D%3D%3D%20%22string%22%29%20%7B%0A%20%20%20%20var%20x_coerced%20%3D%20String%28x%29%3B%0A%20%20%20%20var%20y_coerced%20%3D%20String%28y%29%3B%0A%20%20%7D%20else%20%7B%0A%20%20%20%20var%20x_coerced%20%3D%20Number%28x%29%3B%0A%20%20%20%20var%20y_coerced%20%3D%20Number%28y%29%3B%0A%20%20%7D%3B%0A%0A%20%20return%20x_coerced%20%2B%20y_coerced%3B%0A%7D&cumulative=false&curInstr=11&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
 ```js
 {
   /* test cases      : fill in the correct results
-    null, undefined -> ?
-    "3", 3          -> ?
-    3, "3"          -> ?
-    "3", "e"        -> ?
-    3, "e"          -> ?
-    "", 0           -> ?
-    undefined, 4    -> ?
-    true, false     -> ?
-    true, "false"   -> ?
-    null, false     -> ?
-    1, null         -> ?
-    null, ""        -> ?
+    null, undefined -> NaN
+    "3", 3          -> "33"
+    3, "3"          -> "33"
+    "3", "e"        -> "3e"
+    3, "e"          -> "3e"
+    "", 0           -> "0"
+    undefined, 4    -> NaN
+    true, false     -> 0
+    true, "false"   -> "truefalse"
+    null, false     -> 0
+    1, null         -> 1
+    null, ""        -> "null"
   */
 
   const a =  , b = ;
@@ -79,57 +79,111 @@ function plus(x, y) {
 
 ### a plus b plus c
 
-[on pytut](http://www.pythontutor.com/live.html#code=%0A/*%20test%20cases%20%20%20%20%20%20%20%20%20%20%3A%20fill%20in%20the%20correct%20results%0A%20%20%223%22,%203,%203%20%20%20%20%20%20%20%20%20%20%20-%3E%20%3F%0A%20%203,%20%223%22,%203%20%20%20%20%20%20%20%20%20%20%20-%3E%20%3F%0A%20%203,%203,%20%223%22%20%20%20%20%20%20%20%20%20%20%20-%3E%20%3F%0A%20%20%22%22,%20true,%20false%20%20%20%20%20-%3E%20%3F%0A%20%20true,%20false,%20%22%22%20%20%20%20%20-%3E%20%3F%0A%20%20null,%200,%20%22%22%20%20%20%20%20%20%20%20%20-%3E%20%3F%0A%20%20%22%22,%200,%20null%20%20%20%20%20%20%20%20%20-%3E%20%3F%0A%20%20undefined,%200,%20true%20%20-%3E%20%3F%0A*/%0Aconst%20a%20%3D%20,%20b%20%3D%20,%20c%20%3D%20%3B%0Aconst%20typeof_a%20%3D%20typeof%20a%3B%0Aconst%20typeof_b%20%3D%20typeof%20b%3B%0Aconst%20typeof_c%20%3D%20typeof%20c%3B%0A%0Aconst%20native_plus%20%3D%20a%20%2B%20b%20%2B%20c%3B%20//%20left%20to%20right%0Aconst%20replication%20%3D%20plus%28%20plus%28a,%20b%29,%20c%29%3B%0A%0Aconsole.assert%28native_plus%20%3D%3D%3D%20replication,%20replication%29%3B%0A%0Afunction%20plus%28x,%20y%29%20%7B%0A%20%20%0A%20%20if%20%28typeof%20x%20%3D%3D%3D%20%22string%22%20%7C%7C%20typeof%20y%20%3D%3D%3D%20%22string%22%29%20%7B%0A%20%20%20%20var%20x_coerced%20%3D%20String%28x%29%3B%0A%20%20%20%20var%20y_coerced%20%3D%20String%28y%29%3B%0A%20%20%7D%20else%20%7B%0A%20%20%20%20var%20x_coerced%20%3D%20Number%28x%29%3B%0A%20%20%20%20var%20y_coerced%20%3D%20Number%28y%29%3B%0A%20%20%7D%3B%0A%0A%20%20return%20x_coerced%20%2B%20y_coerced%3B%0A%7D&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
+[on pytut](http://www.pythontutor.com/live.html#code=%0A/*%20test%20cases%20%20%20%20%20%20%20%20%20%20%3A%20fill%20in%20the%20correct%20results%0A%20%20%223%22,%203,%203%20%20%20%20%20%20%20%20%20%20%20-%3E%20%22333%22%0A%20%203,%20%223%22,%203%20%20%20%20%20%20%20%20%20%20%20-%3E%20%22333%22%0A%20%203,%203,%20%223%22%20%20%20%20%20%20%20%20%20%20%20-%3E%20%2263%22%0A%20%20%22%22,%20true,%20false%20%20%20%20%20-%3E%20%22truefalse%22%0A%20%20true,%20false,%20%22%22%20%20%20%20%20-%3E%20%221%22%0A%20%20null,%200,%20%22%22%20%20%20%20%20%20%20%20%20-%3E%20%220%22%0A%20%20%22%22,%200,%20null%20%20%20%20%20%20%20%20%20-%3E%20%220null%22%0A%20%20undefined,%200,%20true%20%20-%3E%20NaN%0A*/%0Aconst%20a%20%3D%20undefined,%20b%20%3D%200,%20c%20%3D%20true%3B%0Aconst%20typeof_a%20%3D%20typeof%20a%3B%0Aconst%20typeof_b%20%3D%20typeof%20b%3B%0Aconst%20typeof_c%20%3D%20typeof%20c%3B%0A%0Aconst%20native_plus%20%3D%20a%20%2B%20b%20%2B%20c%3B%20//%20left%20to%20right%0Aconst%20replication%20%3D%20plus%28%20plus%28a,%20b%29,%20c%29%3B%0A%0Aconsole.assert%28native_plus%20%3D%3D%3D%20replication,%20replication%29%3B%0A%0Afunction%20plus%28x,%20y%29%20%7B%0A%20%20%0A%20%20if%20%28typeof%20x%20%3D%3D%3D%20%22string%22%20%7C%7C%20typeof%20y%20%3D%3D%3D%20%22string%22%29%20%7B%0A%20%20%20%20var%20x_coerced%20%3D%20String%28x%29%3B%0A%20%20%20%20var%20y_coerced%20%3D%20String%28y%29%3B%0A%20%20%7D%20else%20%7B%0A%20%20%20%20var%20x_coerced%20%3D%20Number%28x%29%3B%0A%20%20%20%20var%20y_coerced%20%3D%20Number%28y%29%3B%0A%20%20%7D%3B%0A%0A%20%20return%20x_coerced%20%2B%20y_coerced%3B%0A%7D&cumulative=false&curInstr=18&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
 ```js
-{
-  /* test cases          : fill in the correct results
-    "3", 3, 3           -> ?
-    3, "3", 3           -> ?
-    3, 3, "3"           -> ?
-    "", true, false     -> ?
-    true, false, ""     -> ?
-    null, 0, ""         -> ?
-    "", 0, null         -> ?
-    undefined, 0, true  -> ?
-  */
-  const a = , b = , c = ;
-  const typeof_a = typeof a;
-  const typeof_b = typeof b;
-  const typeof_c = typeof c;
 
-  const native_plus = a + b + c; // left to right
-  const replication = plus( plus(a, b), c);
+/* test cases          : fill in the correct results
+  "3", 3, 3           -> "333"
+  3, "3", 3           -> "333"
+  3, 3, "3"           -> "63"
+  "", true, false     -> "truefalse"
+  true, false, ""     -> "1"
+  null, 0, ""         -> "0"
+  "", 0, null         -> "0null"
+  undefined, 0, true  -> NaN
+*/
+const a = undefined, b = 0, c = true;
+const typeof_a = typeof a;
+const typeof_b = typeof b;
+const typeof_c = typeof c;
 
-  console.assert(native_plus === replication, replication);
+const native_plus = a + b + c; // left to right
+const replication = plus( plus(a, b), c);
+
+console.assert(native_plus === replication, replication);
+
+function plus(x, y) {
+
+  if (typeof x === "string" || typeof y === "string") {
+    var x_coerced = String(x);
+    var y_coerced = String(y);
+  } else {
+    var x_coerced = Number(x);
+    var y_coerced = Number(y);
+  };
+
+  return x_coerced + y_coerced;
 }
 ```
 
 
 ### a + (b + c)
 
-[on putut](http://www.pythontutor.com/live.html#code=/*%20test%20cases%20%20%20%20%20%20%20%20%20%20%3A%20fill%20in%20the%20correct%20results%0A%20%20%223%22,%203,%203%20%20%20%20%20%20%20%20%20%20%20-%3E%20%3F%0A%20%203,%20%223%22,%203%20%20%20%20%20%20%20%20%20%20%20-%3E%20%3F%0A%20%203,%203,%20%223%22%20%20%20%20%20%20%20%20%20%20%20-%3E%20%3F%0A%20%20%22%22,%20true,%20false%20%20%20%20%20-%3E%20%3F%0A%20%20true,%20false,%20%22%22%20%20%20%20%20-%3E%20%3F%0A%20%20null,%200,%20%22%22%20%20%20%20%20%20%20%20%20-%3E%20%3F%0A%20%20%22%22,%200,%20null%20%20%20%20%20%20%20%20%20-%3E%20%3F%0A%20%20undefined,%200,%20true%20%20-%3E%20%3F%0A*/%0Aconst%20a%20%3D%20,%20b%20%3D%20,%20c%20%3D%20%3B%0Aconst%20typeof_a%20%3D%20typeof%20a%3B%0Aconst%20typeof_b%20%3D%20typeof%20b%3B%0Aconst%20typeof_c%20%3D%20typeof%20c%3B%0A%0Aconst%20native_plus%20%3D%20a%20%2B%20%28b%20%2B%20c%29%3B%20//%20right%20to%20left%0Aconst%20replication%20%3D%20plus%28%20a,%20plus%28b,%20c%29%29%3B%0A%0Aconsole.assert%28native_plus%20%3D%3D%3D%20replication,%20replication%29%3B%0A%0Afunction%20plus%28x,%20y%29%20%7B%0A%20%20%0A%20%20if%20%28typeof%20x%20%3D%3D%3D%20%22string%22%20%7C%7C%20typeof%20y%20%3D%3D%3D%20%22string%22%29%20%7B%0A%20%20%20%20var%20x_coerced%20%3D%20String%28x%29%3B%0A%20%20%20%20var%20y_coerced%20%3D%20String%28y%29%3B%0A%20%20%7D%20else%20%7B%0A%20%20%20%20var%20x_coerced%20%3D%20Number%28x%29%3B%0A%20%20%20%20var%20y_coerced%20%3D%20Number%28y%29%3B%0A%20%20%7D%3B%0A%0A%20%20return%20x_coerced%20%2B%20y_coerced%3B%0A%7D&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
+[on putut](http://www.pythontutor.com/live.html#code=/*%20test%20cases%20%20%20%20%20%20%20%20%20%20%3A%20fill%20in%20the%20correct%20results%0A%20%20%223%22,%203,%203%20%20%20%20%20%20%20%20%20%20%20-%3E%2036%0A%20%203,%20%223%22,%203%20%20%20%20%20%20%20%20%20%20%20-%3E%20333%0A%20%203,%203,%20%223%22%20%20%20%20%20%20%20%20%20%20%20-%3E%20333%0A%20%20%22%22,%20true,%20false%20%20%20%20%20-%3E%201%0A%20%20true,%20false,%20%22%22%20%20%20%20%20-%3E%20truefalse%0A%20%20null,%200,%20%22%22%20%20%20%20%20%20%20%20%20-%3E%20null0%0A%20%20%22%22,%200,%20null%20%20%20%20%20%20%20%20%20-%3E%200%0A%20%20undefined,%200,%20true%20%20-%3E%20NaN%0A*/%0Aconst%20a%20%3D%20undefined,%20b%20%3D%200,%20c%20%3D%20true%3B%0Aconst%20typeof_a%20%3D%20typeof%20a%3B%0Aconst%20typeof_b%20%3D%20typeof%20b%3B%0Aconst%20typeof_c%20%3D%20typeof%20c%3B%0A%0Aconst%20native_plus%20%3D%20a%20%2B%20%28b%20%2B%20c%29%3B%20//%20right%20to%20left%0Aconst%20replication%20%3D%20plus%28%20a,%20plus%28b,%20c%29%29%3B%0A%0Aconsole.assert%28native_plus%20%3D%3D%3D%20replication,%20replication%29%3B%0A%0Afunction%20plus%28x,%20y%29%20%7B%0A%20%20%0A%20%20if%20%28typeof%20x%20%3D%3D%3D%20%22string%22%20%7C%7C%20typeof%20y%20%3D%3D%3D%20%22string%22%29%20%7B%0A%20%20%20%20var%20x_coerced%20%3D%20String%28x%29%3B%0A%20%20%20%20var%20y_coerced%20%3D%20String%28y%29%3B%0A%20%20%7D%20else%20%7B%0A%20%20%20%20var%20x_coerced%20%3D%20Number%28x%29%3B%0A%20%20%20%20var%20y_coerced%20%3D%20Number%28y%29%3B%0A%20%20%7D%3B%0A%0A%20%20return%20x_coerced%20%2B%20y_coerced%3B%0A%7D&cumulative=false&curInstr=18&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
+
 ```js
-{
-  /* test cases          : fill in the correct results
-    "3", 3, 3           -> ?
-    3, "3", 3           -> ?
-    3, 3, "3"           -> ?
-    "", true, false     -> ?
-    true, false, ""     -> ?
-    null, 0, ""         -> ?
-    "", 0, null         -> ?
-    undefined, 0, true  -> ?
-  */
-  const a = , b = , c = ;
-  const typeof_a = typeof a;
-  const typeof_b = typeof b;
-  const typeof_c = typeof c;
+/* test cases          : fill in the correct results
+  "3", 3, 3           -> 36
+  3, "3", 3           -> 333
+  3, 3, "3"           -> 333
+  "", true, false     -> 1
+  true, false, ""     -> truefalse
+  null, 0, ""         -> null0
+  "", 0, null         -> 0
+  undefined, 0, true  -> NaN
+*/
+const a = undefined, b = 0, c = true;
+const typeof_a = typeof a;
+const typeof_b = typeof b;
+const typeof_c = typeof c;
 
-  const native_plus = a + (b + c); // right to left
-  const replication = plus( a, plus(b, c));
+const native_plus = a + (b + c); // right to left
+const replication = plus( a, plus(b, c));
 
-  console.assert(native_plus === replication, replication);
+console.assert(native_plus === replication, replication);
+
+function plus(x, y) {
+
+  if (typeof x === "string" || typeof y === "string") {
+    var x_coerced = String(x);
+    var y_coerced = String(y);
+  } else {
+    var x_coerced = Number(x);
+    var y_coerced = Number(y);
+  };
+
+  return x_coerced + y_coerced;
 }
+```
+
+### +a
+[on putut](http://www.pythontutor.com/live.html#code=/*%20test%20cases%20%20%20%20%20%20%3A%20fill%20in%20the%20correct%20results%0A%20%20null%20%20%20%20%20%20%20%20-%3E%20%200%0A%20%20undefined%20%20%20-%3E%20%20NaN%0A%20%200%20%20%20%20%20%20%20%20%20%20%20-%3E%20%200%0A%20%201%20%20%20%20%20%20%20%20%20%20%20-%3E%20%201%0A%20%20-1.5%20%20%20%20%20%20%20%20-%3E%20%20-1.5%0A%20%20NaN%20%20%20%20%20%20%20%20%20-%3E%20%20NaN%0A%20%20Infinity%20%20%20%20-%3E%20%20Infinity%0A%20%20%22%22%20%20%20%20%20%20%20%20%20%20-%3E%20%200%0A%20%20%22%20%22%20%20%20%20%20%20%20%20%20-%3E%20%200%0A%20%20%223%22%20%20%20%20%20%20%20%20%20-%3E%20%203%0A%20%20%223.3%22%20%20%20%20%20%20%20-%3E%20%203.3%0A%20%20%223%20%2B%203%22%20%20%20%20%20-%3E%20%20NaN%0A%20%20true%20%20%20%20%20%20%20%20-%3E%20%201%0A%20%20false%20%20%20%20%20%20%20-%3E%20%200%0A*/%0A%0Aconst%20a%20%3D%20false%3B%0Aconst%20typeof_a%20%3D%20typeof%20a%3B%0A%0A%0Aconst%20native_plus%20%3D%20%2Ba%3B%0Aconst%20replication%20%3D%20Number%28a%29%3B%0A%0Aconsole.assert%28native_plus%20%3D%3D%3D%20replication,%20replication%29%3B&cumulative=false&curInstr=5&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
+```js
+/* test cases      : fill in the correct results
+  null        ->  0
+  undefined   ->  NaN
+  0           ->  0
+  1           ->  1
+  -1.5        ->  -1.5
+  NaN         ->  NaN
+  Infinity    ->  Infinity
+  ""          ->  0
+  " "         ->  0
+  "3"         ->  3
+  "3.3"       ->  3.3
+  "3 + 3"     ->  NaN
+  true        ->  1
+  false       ->  0
+*/
+
+const a = false;
+const typeof_a = typeof a;
+
+
+const native_plus = +a;
+const replication = Number(a);
+
+console.assert(native_plus === replication, replication);
 ```
 
 [TOP](#implicit-coercion)
@@ -182,7 +236,7 @@ It's your turn.  In this exercise you'll write your own replication of the == op
 */
 ```
 
-[on pytut](http://www.pythontutor.com/live.html#code=/*%20your%20function%20must%20pass%20all%20of%20these%20tests%0A%20%20%0A%20%20null,%20undefined%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20true%0A%20%20undefined,%20null%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20true%0A%20%20null,%20null%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20true%0A%20%20undefined,%20undefined%20%20%20%20%20%20%20-%3E%20%20%20true%0A%20%20null,%20%28anything%20else%29%20%20%20%20%20%20-%3E%20%20%20false%0A%20%20undefined,%20%28anything%20else%29%20-%3E%20%20%20false%0A%20%20%0A%20%20true,%20false%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20false%0A%20%20false,%20false%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20true%0A%20%203,%203%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20true%0A%20%203.0,%203%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20true%0A%20%20%2B0,%20-0%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20true%0A%20%20%22%5Ct%22,%20'%5Ct'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20true%0A%20%20-3,%20%2B3%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20false%0A%20%20%20%20%20%20%20%0A%20%203,%20%223%22%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20true%0A%20%20%223%22,%203%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20true%0A%20%20%223,%20%223%22%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20true%0A%20%20true,%201%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20true%0A%20%20false,%200%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20true%0A%20%20false,%20%22%22%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20true%0A%20%200,%20%22%22%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20true%0A%20%20%22e%22,%20true%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20false%0A%20%20undefined,%20%22%22%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20false%0A*/%0A%0Aconst%20a%20%3D%20,%20b%20%3D%20%3B%0A%0Aconst%20native%20%3D%20a%20%3D%3D%20b%3B%0Aconst%20replication%20%3D%20lose_equality%28a,%20b%29%3B%0A%0Aconsole.assert%28native%20%3D%3D%3D%20replication,%20%22replication%20%3D%3D%3D%20%22%20%2B%20replication%29%3B%0A%0Afunction%20loose_equality%28x,%20y%29%20%7B%20%0A%20%20//%20if%20both%20a%20and%20b%20are%20null%20or%20undefined,%20return%20true%0A%20%20//%20if%20only%20one%20is%20null%20or%20undefined,%20return%20false%0A%0A%20%20//%20if%20both%20arguments%20are%20the%20same%20type%20%28num,%20string,%20or%20bool%29%0A%20%20//%20%20compare%20them%20with%20%3D%3D%3D%20and%20return%20the%20result%0A%0A%20%20//%20if%20both%20are%20not%20the%20same%20type%0A%20%20//%20%20make%20sure%20both%20are%20type%20'number'%0A%20%20//%20%20compare%20them%20with%20%3D%3D%3D,%20and%20return%20the%20result%0A%7D&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
+[on pytut](http://www.pythontutor.com/live.html#code=/*%20your%20function%20must%20pass%20all%20of%20these%20tests%0A%20%20%0A%20%20null,%20undefined%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20true%0A%20%20undefined,%20null%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20true%0A%20%20null,%20null%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20true%0A%20%20undefined,%20undefined%20%20%20%20%20%20%20-%3E%20%20%20true%0A%20%20null,%20%28anything%20else%29%20%20%20%20%20%20-%3E%20%20%20false%0A%20%20undefined,%20%28anything%20else%29%20-%3E%20%20%20false%0A%20%20%0A%20%20true,%20false%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20false%0A%20%20false,%20false%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20true%0A%20%203,%203%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20true%0A%20%203.0,%203%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20true%0A%20%20%2B0,%20-0%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20true%0A%20%20%22%5Ct%22,%20'%5Ct'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20true%0A%20%20-3,%20%2B3%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20false%0A%20%20%20%20%20%20%20%0A%20%203,%20%223%22%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20true%0A%20%20%223%22,%203%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20true%0A%20%20%223,%20%223%22%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20true%0A%20%20true,%201%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20true%0A%20%20false,%200%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20true%0A%20%20false,%20%22%22%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20true%0A%20%200,%20%22%22%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20true%0A%20%20%22e%22,%20true%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20false%0A%20%20undefined,%20%22%22%20%20%20%20%20%20%20%20%20%20%20%20%20%20-%3E%20%20%20%20false%0A*/%0A%0Aconst%20a%20%3D%20%22e%22,%20b%20%3D%203%3B%0A%0Aconst%20native%20%3D%20a%20%3D%3D%20b%3B%0Aconst%20replication%20%3D%20loose_equality%28a,%20b%29%3B%0A%0Aconsole.assert%28native%20%3D%3D%3D%20replication,%20%22replication%20%3D%3D%3D%20%22%20%2B%20replication%29%3B%0A%0Afunction%20loose_equality%28x,%20y%29%20%7B%20%0A%20%20//%20if%20both%20a%20and%20b%20are%20null%20or%20undefined,%20return%20true%0A%20%20//%20if%20only%20one%20is%20null%20or%20undefined,%20return%20false%0A%20%20var%20x_like_null%20%3D%20x%20%3D%3D%3D%20null%20%7C%7C%20x%20%3D%3D%3D%20undefined%3B%0A%20%20var%20y_like_null%20%3D%20y%20%3D%3D%3D%20null%20%7C%7C%20y%20%3D%3D%3D%20undefined%3B%0A%20%20if%20%28x_like_null%20%7C%7C%20y_like_null%29%20%7B%0A%20%20%20%20return%20x_like_null%20%26%26%20y_like_null%3B%0A%20%20%20%20%7D%20%0A%0A%20%20//%20if%20both%20arguments%20are%20the%20same%20type%20%28num,%20string,%20or%20bool%29%0A%20%20//%20%20compare%20them%20with%20%3D%3D%3D%20and%20return%20the%20result%0A%20%20const%20typeof_x%20%3D%20typeof%20x%3B%0A%20%20const%20typeof_y%20%3D%20typeof%20y%3B%0A%20%20var%20x_like_y%20%3D%20typeof_x%20%3D%3D%3D%20typeof_y%3B%0A%20%20if%20%28x_like_y%29%7B%0A%20%20%20%20return%20x%20%3D%3D%3D%20y%3B%0A%20%20%20%20%7D%0A%20%20%0A%20%20%0A%20%20//%20if%20both%20are%20not%20the%20same%20type%0A%20%20//%20%20make%20sure%20both%20are%20type%20'number'%0A%20%20//%20%20compare%20them%20with%20%3D%3D%3D,%20and%20return%20the%20result%0A%20%20%20%20var%20x_number%20%3D%20Number%28x%29%3B%20%0A%20%20%20%20var%20y_number%20%3D%20Number%28y%29%3B%20%0A%20%20%20%20return%20x_number%20%3D%3D%3D%20y_number%3B%0A%20%0A%7D&cumulative=false&curInstr=15&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
 ```js
 {
   const a = , b = ;
@@ -194,14 +248,29 @@ It's your turn.  In this exercise you'll write your own replication of the == op
 
   function loose_equality(x, y) {
     // if both a and b are null or undefined, return true
-    // if only one is null or undefined, return false
+      // if only one is null or undefined, return false
+      var x_like_null = x === null || x === undefined;
+      var y_like_null = y === null || y === undefined;
+      if (x_like_null || y_like_null) {
+        return x_like_null && y_like_null;
+        }
 
-    // if both arguments are the same type (num, string, or bool)
-    //  compare them with === and return the result
+      // if both arguments are the same type (num, string, or bool)
+      //  compare them with === and return the result
+      const typeof_x = typeof x;
+      const typeof_y = typeof y;
+      var x_like_y = typeof_x === typeof_y;
+      if (x_like_y){
+        return x === y;
+        }
 
-    // if both are not the same type
-    //  make sure both are type 'number'
-    //  compare them with ===, and return the result
+
+      // if both are not the same type
+      //  make sure both are type 'number'
+      //  compare them with ===, and return the result
+        var x_number = Number(x);
+        var y_number = Number(y);
+        return x_number === y_number;
   }
 }
 ```
