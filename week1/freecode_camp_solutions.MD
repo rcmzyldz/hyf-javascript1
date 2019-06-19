@@ -4,8 +4,10 @@
 ## 1. Comment Your Code
 
 ```js
-// this is my first comment
-/* this is a multi line comment */
+// This is a header part
+/* While you are writing story, you need to
+pay attention many different
+things.*/
 ```
 
 ## 2. Declare Variables
